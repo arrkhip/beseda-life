@@ -47,53 +47,6 @@
   		bottom: 1px
 
 
-.headline
-	position: relative
-	display: flex
-	flex-wrap: wrap
-	justify-content: space-between
-	align-items: center
-
-	&::before
-		content: ''
-		position: absolute
-		bottom: 18px
-		left: 0
-		z-index: -1
-		height: 1px
-		width: 100%
-		background-color: rgba(34, 34, 34, .2)
-
-	&__subtitle
-		width: 100%
-		margin-bottom: 11px
-		font: 700 13px/16px $font-main
-		letter-spacing: 0.1em
-		text-transform: uppercase
-		color: $color-primary
-
-		a 
-			+trs()
-
-			&:hover
-				opacity: .7
-
-	&__title
-		padding-right: 21px
-		background-color: $white
-
-	&__more
-		padding-left: 31px
-		font-size: 13px
-		letter-spacing: 0.1em
-		text-transform: uppercase
-		background-color: $white
-		+trs()
-
-		&:hover
-			color: $color-primary
-
-
 +width-md
 
 	.h1
@@ -117,18 +70,6 @@
 	.h1	
 		font-size: 26px
 		line-height: 1.3em
-
-	.headline
-		&::before
-			display: none
-			
-		&__more
-			padding-left: 0
-			margin-top: 15px
-
-	.h3
-		font-size: 17px
-		line-height: 24px
 
 
 	+width-xs
