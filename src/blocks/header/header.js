@@ -1,7 +1,7 @@
 //header mobile menu
 $('.js-header__switch').click(function() {
 	$('.header__switch').toggleClass('open');
-	$('.header__inner').toggleClass('open');
+	$('.header__menu').toggleClass('open');
 	$('body').toggleClass('scroll-hidden');
 });
 

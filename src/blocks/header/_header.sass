@@ -7,126 +7,40 @@
 	position: fixed
 	top: 0
 	left: 0
-	display: flex
-	align-items: center
 	width: 100%
-	padding: 0 44px
-	height: 136px
-	color: $white
-	background: url('../img/header-bg.png') center no-repeat 
-	background-size: cover
 	z-index: 10
+	padding: 20px 0
 	+trs()
 
 	&--fixed
-		background-image: none
-		background-color: rgba(0, 0, 0, 0.8)
-
-	&--main
-		background-image: none
-
-		&+div,
-		&+section 
-			margin-top: 0 !important
+		box-shadow: 0px 4px 40px #D2DBE2
+		padding: 9px 0
 
 	&+div,
 	&+section 
-		margin-top: 160px
-
-	&__inner
-		opacity: 0
-		visibility: hidden
-		width: 0
-
-		&::before
-			content: ''
-			position: absolute
-			top: 20px
-			right: 20px
-			width: 20px
-			height: 20px
-			border-radius: 50%
-			background-color: rgba(0, 0, 0, .95)
-			+trs()
-			transform: translate3d(50%,-50%,0)
-			transform-origin: center center
-			opacity: 0
-
-		&.open
-			position: fixed
-			top: 0
-			left: 0
-			width: 100%
-			height: 100%
-			opacity: 1
-			visibility: visible
-			+trs()
-
-			&::before
-				width: 300vw
-				height: 300vw
-				transform: translate3d(50%,-50%,0)
-				opacity: 1
-
-			.grid
-				height: 100%
-				display: flex
-				align-items: center
-
-	&__call,
-	&__social
-		display: none
-
-	&__phone
-		margin-right: 97px
-		font: 700 55px/1 $font-main
-		text-transform: uppercase
-		+trs()
-
-		&:hover
-			color: $color-primary
-
-	&__logo
-		display: inline-flex
-		align-items: center
-		padding-bottom: 20px
-		border-bottom: 3px solid $white
-		margin-right: 178px
-
-		&-icon
-			width: 28px
-			height: 28px
-			fill: $white
-			margin-right: 17px
-
-		&-text
-			font: 700 20px/24px $font-main
-			letter-spacing: 1px
-			letter-spacing: 3.9px
-			text-transform: uppercase
-			+trs()
-
-		&:hover
-			border-color: $color-primary
+		margin-top: 73px
 	
-	&__inner
-		z-index: 9
-	
-	&__menu
+	&__wrapper
 		display: flex
 		align-items: center
-		margin-left: auto
+		justify-content: space-between
+
+	&__logo
+		line-height: 0
+	
+	&__menu
+		display: inline-flex
+		align-items: center
 
 		&-item:not(:last-child)
-			margin-right: 30px
+			margin-right: 45px
 	
 		&-link
 			display: inline-block
 			position: relative
-			font-size: 14px
-			line-height: 17px
-			letter-spacing: 1.4px
-			text-transform: uppercase
+			font-weight: 500
+			line-height: 19px
+			color: $color-text-1
 			+trs()
 
 			&::after
@@ -136,21 +50,47 @@
 				bottom: -6px
 				width: 100%
 				height: 2px
-				background-color: $color-primary
+				background-color: $color-primary-1
 				transform: translateX(20px)
 				opacity: 0
 				+trs(all, .3s, ease)
 
-			&:hover::after
+			&:not(.active):hover::after
 				transform: translateX(0)
 				opacity: 1
 
+			&.active
+				color: $black
+
+	&__user
+		display: inline-flex
+
+		&-reg,
+		&-login
+			display: inline-flex 
+			align-items: center
+
+		&-reg
+			margin-right: 37px
+
+		&-icon
+			width: 19px
+			height: 19px
+			margin-right: 11px
+
+		&-text
+			font-weight: 500
+			color: $black
+			+trs()
+
+			&:hover
+				color: $color-primary-1
+
 	&__switch
-		margin-left: auto
 		position: relative
-		display: block
-		width: 56px
-		height: 35px
+		display: none
+		width: 30px
+		height: 30px
 		padding: 0
 		cursor: pointer
 		z-index: 11
@@ -163,8 +103,8 @@
 			left: 0
 			display: block
 			width: 100%
-			height: 6px
-			background: $white
+			height: 2px
+			background: $black
 			transform: translateY(-50%)
 
 			&::before, 
@@ -173,358 +113,111 @@
 				position: absolute
 				display: block
 				left: 0
-				height: 6px
-				background-color: $white
+				height: 2px
+				background-color: $black
 				transition-duration: 0.3s, 0.3s
 
 			&::before 
 				width: 100%
-				top: -14px
+				top: -8px
 				transition-property: top, transform				
 
 			&::after 
-				width: 44px
-				bottom: -13px
+				width: 100%
+				bottom: -8px
 				transition-property: bottom, transform
 			
 		&.open
-			transform: rotate(-180deg)
-		&.open span 
-			background: none
+
+			span 
+				background: none
 	
-			&::before, 
-			&::after 
-				transition-delay: 0s, 0.3s
-				background-color: $white
-	
-			&::before 
-				top: 0
-				transform: rotate(45deg)
+				&::before, 
+				&::after 
+					transition-delay: 0s, 0.3s
+					background-color: $white
 		
-			&::after 
-				bottom: 0
-				width: 100%
-				transform: rotate(-45deg)
+				&::before 
+					top: 0
+					transform: rotate(45deg)
+			
+				&::after 
+					bottom: 0
+					width: 100%
+					transform: rotate(-45deg)
 
-	&__nav
-		position: relative
-		display: flex
-		flex-wrap: wrap
-		align-items: flex-start
-		justify-content: space-between
-		width: 100%
-		height: 100%
-		padding: 50px 0
 
-		&-box
-			width: 100%
+	+width-lg
 
-			&:nth-child(1),
-			&:nth-child(3)
-				max-width: 650px
+		&__menu
+			margin-left: auto
 
-			&:nth-child(2),
-			&:nth-child(4)
-				max-width: 430px
+			&-item:not(:last-child)
+				margin-right: 15px
 
-		.h5 
-			color: $white
-	
-		&-list
-			padding-top: 7px
+			&-link
+				font-size: 15px
 
-			&--b-offset
-				margin-bottom: 25px
-		
-		&-item
-			display: flex
-			align-items: baseline
-			padding-left: 5px
+		&__user
+			margin-left: auto
+			margin-right: 45px
 
+			&-reg
+				margin-right: 15px
+			
 			&-icon
-				width: 4.81px
-				height: 8.38px
-				margin-right: 7px
-				fill: $white
-				+trs()
-		
-		&-link
-			font-size: 18px
-			line-height: 33px
-			+trs()
+				margin-right: 5px
 
-			&:hover
-				opacity: .7
 		
-		&-social
-			display: flex
-			align-items: center
-			margin-top: 30px
+	+width-md
+
+		&__switch
+			display: block
+
+		&__menu
+			position: fixed
+			top: 0
+			left: 0
+			flex-direction: column
+			justify-content: center
+			width: 100%
+			height: 100%
+			margin-left: 0
+			background-color: rgba(0, 0, 0, .95)
+			visibility: hidden
+			opacity: 0
+			+trs(opacity, .4s, ease)
 
 			&-item
 
 				&:not(:last-child)
-					margin-right: 20px
-			
-			&-icon
-				width: 15px
-				height: 15px
-				fill: $white
-				+trs()
-
-				&:hover
-					fill: $color-primary
-
-	@media (max-width: 1600px)
-		padding: 0 44px
-		height: 136px
-
-		&__phone
-			margin-right: 90px
-			font-size: 47px
-
-		&__logo
-			margin-right: 100px
-			font-size: 17px
-			line-height: 28px
-			letter-spacing: 3px
-		
-		&__menu
-			margin-left: 0
-
-			&-item:not(:last-child)
-				margin-right: 25px
-		
-			&-link
-				font-size: 12px
-				line-height: 14px
-
-
-	@media (max-width: 1400px)
-		height: 95px
-
-		&__phone
-			margin-right: auto
-			font-size: 37px
-
-		&__logo
-			padding-bottom: 12px
-			margin-right: auto
-			font-size: 17px
-
-			&-icon
-				width: 25px
-				height: 25px
-
-
-	+width-lg
-		padding: 0 30px
-
-		&__logo
-			order: -1
-
-		&__phone
-			margin-right: 27px
-
-		&__menu
-			display: none
-
-		&__switch
-			margin-left: 0
-
-		&__nav
-
-			&-box
-
-				&:nth-child(1),
-				&:nth-child(2)
-					max-width: 460px
-
-				&:nth-child(3),
-				&:nth-child(4)
-					max-width: 315px
-
-				&:nth-child(2)
-					order: 1
-
-				&:nth-child(4)
-					order: 2
+					margin-right: 0
+					margin-bottom: 15px
 
 			&-link
-				font-size: 14px
-				line-height: 27px
+				font-size: 16px
 
-	+width-md
+				&.active
+					color: $white
 
-		&__inner.open
-			overflow-y: auto
-
-			&::before
-				position: fixed
-				top: 0
-				right: 0
-				width: 100%
-				height: 100%
-				transform: none
-				border-radius: 0
-
-		&+div,
-		&+section 
-			margin-top: 125px
-
-		&__logo-text
-			font-size: 15px
-
-		&__phone
-			margin-right: 20px
-
-		&__nav
-
-			&-box
-
-				&:nth-child(1),
-				&:nth-child(2)
-					max-width: 320px
-
-				&:nth-child(3),
-				&:nth-child(4)
-					max-width: 260px
-
-			&-link
-				font-size: 13px
-
-
-	+width-sm
-
-		&__logo-text
-			width: 100%
-			max-width: 182px
-			font-size: 14px
-			line-height: 19px
-
-		&__nav
-
-			&-box
-
-				&:nth-child(1),
-				&:nth-child(2)
-					max-width: 240px
-
-				&:nth-child(3),
-				&:nth-child(4)
-					max-width: 240px
+			&.open
+				visibility: visible
+				opacity: 1
 
 
 	+width-xs
 		height: auto
-		padding: 10px 18px
-		flex-wrap: wrap
-		justify-content: space-between
-		align-items: center
+		padding: 10px 0
 
 		&+div,
 		&+section 
 			margin-top: 100px
 
-		&__logo
-			order: -1
-			width: 100%
-			border-bottom: none
-			padding-bottom: 0
+		&__user
+			margin-right: 15px
 
-			&-icon
-				width: 19px
-				height: 19px
-				margin-right: 6px
+			&-reg
+				margin-right: 5px
 
 			&-text
-				max-width: 100%
-				font-size: 11px
-				line-height: 13px
-				letter-spacing: 2px
-
-		&__phone
-			padding-left: 0
-			margin-top: 3px
-			margin-right: auto
-			font-size: 30px
-			line-height: 36px
-
-		&__call,
-		&__social
-			display: block
-			margin-right: 20px
-
-			&-icon
-				width: 22px
-				height: 22px
-				fill: $white
-
-		&__social
-
-			&-inner
-				display: flex
-
-				.mfp-close
-					position: absolute
-					top: 20px
-					right: 20px
-					color: $white
-				
-			&-list
-				display: flex
-				flex-direction: column
-				margin: auto
-
-			&-link
-				font-size: 18px
-				font-weight: 700
-				letter-spacing: 2px
-				color: $white
-
-				&:not(:last-child)
-					margin-bottom: 20px
-
-		&__switch
-			width: 24px
-			height: 22px
-			// overflow: hidden
-
-			span
-				height: 4px
-
-				&::before, 
-				&::after 
-					height: 4px
-
-				&::before 
-					top: -9px	
-
-				&::after 
-					width: 19px
-					bottom: -9px
-
-		&__inner
-			display: none
-
-			&.open
-				display: flex
-
-		&__nav
-
-			&-box
-				max-width: 100%
-
-
-.mfp-social
-	background-color: rgba(0, 0, 0, .95) !important
-
-	.mfp-close 
-		top: 15px
-		right: 15px
-		width: 42px
-		height: 42px
-		line-height: 0
-		opacity: 1
-		padding: 0 
-		font-size: 75px
+				display: none
