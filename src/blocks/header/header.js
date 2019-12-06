@@ -8,7 +8,7 @@ $('.js-header__switch').click(function() {
 
 //header fixed
 $(window).scroll(function(){
-    if ($(window).scrollTop() >= 200) {
+    if ($(window).scrollTop() >= 100) {
         $('.header').addClass('header--fixed');
     }
     else {
