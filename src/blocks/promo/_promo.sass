@@ -1,399 +1,141 @@
 .promo
 	position: relative 
-	color: $white
+	
+	&__wrapper
+		display: flex
+		align-items: flex-start
+	
+	&__info
+		width: 100%
+		max-width: 474px
+		padding-top: 110px
+		margin-right: 83px
+	
+	&__descr
+		max-width: 346px
+		margin: 7px 0 43px
+	
+	&__box
 
-	.grid,
-	&__slider,
-	&__inner
-		height: 100%
-
-	&__slider
-		// overflow: hidden
-
-	&__slide
+		.btn:first-child
+			margin-right: 32px
+	
+	&__banner
 		position: relative
-		height: 100vh
-		background: center no-repeat 
-		background-size: cover
 
-		&:nth-child(1)
-			background-image: url('../img/promo-bg.png')
-			
-		&:nth-child(2)
-			background-image: url('../img/promo-bg-1.png')
+	&__question,
+	&__answer
+		position: absolute
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 51px
+		border: 2px solid #EDF1F4
+		border-radius: 7px
+		font-weight: 700
+		color: #2E475B
+		box-shadow: 11px 12px 10px rgba(41, 57, 49, 0.28)
 
-		&:nth-child(3)
-			background-image: url('../img/promo-bg-2.png')
-
-		&:nth-child(4)
-			background-image: url('../img/promo-bg-3.png')
-
-		&:nth-child(5)
-			background-image: url('../img/promo-bg-4.png')
-
-		&:nth-child(6)
-			background-image: url('../img/promo-bg-5.png')
-		
 		&::after
 			content: ''
 			position: absolute
-			top: 0
-			left: 0
-			width: 100%
-			height: 100%
-			background: linear-gradient(0deg, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), linear-gradient(0deg, rgba(4, 23, 198, 0.15), rgba(4, 23, 198, 0.15))
-			
-		&:nth-child(1)::after
-			background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
+			bottom: -8px
+			right: -2px
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 0 12px 12px 0
+			border-color: transparent $white transparent transparent
 
-		&:nth-child(3)::after
-			background: linear-gradient(0deg, rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)), linear-gradient(0deg, rgba(4, 23, 198, 0.15), rgba(4, 23, 198, 0.15))
+	&__question
+		top: 179px
+		right: 150px
+		width: 185px
+		background-color: $white
+	
+	&__answer
+		top: 263px
+		left: -19px
+		width: 149px
+		background-color: #F5F8FB
 
-		&:nth-child(4)::after
-			background:  linear-gradient(0deg, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), linear-gradient(0deg, rgba(4, 23, 198, 0.1), rgba(4, 23, 198, 0.1))
-
-
-	.swiper-slide
-		opacity: 0 !important
-
-		&-active
-			opacity: 1 !important
-
-	&__pagination
-		position: absolute
-		top: 50%	
-		right: 44px
-		left: auto !important
-		bottom: auto !important
-		display: flex
-		flex-direction: column
-		width: 12px !important
-		z-index: 1
-		transform: translateY(-50%)
-
-		.swiper-pagination-bullet
-			width: 12px
-			height: 12px
-			margin-left: 0 !important
-			margin-right: 0 !important
-			background-color: #606268
-			opacity: 1
-
-			&:not(:last-child)
-				margin-bottom: 20px
-
-			&-active
-				background-color: $white
-
-			&:focus
-				outline: none
-
-	&__inner
-		position: relative
-		display: flex
-		justify-content: space-between
-		align-items: center
-		z-index: 1
-
-	&__info
-
-		&-or
-			display: block
-			font-size: 30px
-			line-height: 60px
-
-
-	&__title
-		margin-bottom: 35px
-		font: 700 50px/65px $font-main
-
-		span 
-			border-bottom: 3px solid $white
-
-		a 
-			font-weight: 900
-			color: $color-primary
-			+trs()
-
-			&:hover
-				opacity: .8
-
-
-	&__box
-		display: flex
-		flex-wrap: wrap
-
-		span 
-			display: block
-			width: 100%
-			margin-top: 15px
-			margin-left: 70px
-			font: 700 12px/18px $font-main
-			letter-spacing: 1px
-			text-transform: uppercase
-			color: $color-primary
-
-	&__whatsapp,
-	&__viber
-		display: inline-flex
-		width: 68px
-		height: 68px
-		+trs()
-
-		&:hover
-			opacity: .8
-
-		svg
-			width: 47px
-			height: 47px
-			margin: auto
-			fill: $white
-
-	&__whatsapp
-		margin: 0 10px
-		background-color: #2BCA4B
-
-	&__viber
-		background-color: #7D3DAF
-
-	&__descr
-		width: 100%
-		max-width: 407px
-		align-self: flex-end
-		margin-bottom: 90px
-
-		&-text
-			font-style: italic
-
-		&-number
-			margin-bottom: 20px
-			font-size: 30px
-			font-weight: 700
-			letter-spacing: 5.4px
-
-			span 
-				display: inline-block
-				vertical-align: top
-				font-size: 60px
-				line-height: .9
-				letter-spacing: 3.9px
-
-	&__footer
-		position: absolute
-		left: 0
-		bottom: 35px
-		width: 100%
-		z-index: 1
-		display: flex
-		align-items: baseline
-		justify-content: space-between
-		padding: 0 44px
-
-	&__social
-
-		&-item
-			display: inline-flex
-			width: 47px
-			height: 47px
-			border-radius: 50%
-			background-color: $white
-			+trs()
-
-			&:hover
-				opacity: .8
-
-			&:not(:last-child)
-				margin-right: 15px
-
-			svg
-				width: 20px
-				height: 20px
-				margin: auto
-				fill: #2B2B2B
-
-	&__adds
-		font-size: 12px
-		line-height: 14px
-		letter-spacing: 1.4px
-		text-transform: uppercase
-
-
-	@media (max-width: 1400px)
-
-		&__title
-			font-size: 41px
-			line-height: 53px
-
-		&__descr
-			max-width: 345px
-
-			&-number
-				font-size: 24px
-				line-height: 37px
-
-				span 
-					font-size: 50px
-
-			&-text
-				font-size: 17px
-				line-height: 23px
-
-		&__box
-
-			span 
-				margin-left: 0
-
-		&__whatsapp,
-		&__viber
-			height: 60px
-			width: 60px
-
-		&__social
-
-			&-item
-				width: 32px
-				height: 32px
-
-				&:not(:last-child)
-					margin-right: 8px
-
-				svg
-					width: 15px
-					height: 15px
+		&::after
+			border-color: transparent #F5F8FB transparent transparent
 
 
 	+width-lg
-		&__slide
-			height: 650px
+
+		&__info
+			max-width: 472px
+			padding-top: 100px
+			margin-right: 0
+
+		&__box
+			.btn:first-child
+				margin-right: 20px
+
+		&__question 
+			top: 164px
+			right: 103px
+			width: 175px
+
+		&__answer 
+			top: 240px
+			left: -32px
 
 	+width-md
-
-		&__title
-			font-size: 32px
-			line-height: 42px
-
-		&__info-or
-			font-size: 25px
+		
+		&__info
+			max-width: 265px
+			padding-top: 20px
+			margin-right: 47px
 
 		&__descr
-			max-width: 300px
+			margin-bottom: 25px
 
-			&-number
-				margin-bottom: 10px
-				font-size: 18px
-				line-height: 22px
+		&__box
 
-				span 
-					font-size: 40px
+			.btn
+				width: calc(100% - 20px)
 
-			&-text
-				font-size: 15px
-				line-height: 20px
+				&:first-child
+					margin-right: 0
+					margin-bottom: 10px
 
-		&__whatsapp,
-		&__viber
-			height: 52px
-			width: 52px
+		&__question 
+			top: 208px
+			right: 107px
+			width: 175px
+			height: 37px
 
-		&__whatsapp 
-			margin: 0 8px
+		&__answer
+			top: 257px
+			left: -9px
+			height: 37px
 
 
 	+width-sm
 
-		&__slide
-			height: 490px
-
-		&__title
-			font-size: 25px
-			line-height: 32px
-
-		&__info-or
-			font-size: 18px
-			line-height: 32px
+		&__info
+			max-width: 100%
+			padding-top: 20px
+			margin-right: 0
 
 		&__descr
+			max-width: 100%
+			margin-bottom: 30px
+		
+		&__box
+
+			.btn
+				width: auto
+
+				&:first-child
+					margin-right: 15px
+
+		&__banner
 			display: none
-
-		&__social
-
-			&-item
-				width: 26px
-				height: 26px
-
-				&:not(:last-child)
-					margin-right: 4px
-
-				svg
-					width: 10px
-					height: 10px
 
 
 	+width-xs
-
-		&__slide
-			height: 330px
-			background-position-x: 67%
-
-		&__inner
-			align-items: flex-end
-
-		&__info
-			display: flex
-			flex-direction: column-reverse
-			align-items: center
-			width: 100%
-
-		&__title
-			margin-bottom: 48px
-			font-size: 19px
-			line-height: 25px
-			text-align: center
-
-		&__box
-			margin-bottom: 10px
-
-		&__whatsapp, 
-		&__viber
-			width: 41px
-			height: 41px
-
-			svg
-				width: 29px
-				height: 29px
-
-		&__whatsapp
-			margin: 0 7px
-
-		&__pagination
-			top: auto
-			right: auto
-			left: 50% !important
-			bottom: 20px !important
-			display: flex
-			flex-direction: row
-			width: auto !important
-			z-index: 1
-			transform: translate(-50%, 0)
-
-			.swiper-pagination-bullet
-				width: 9px
-				height: 9px
-				margin-left: 0 !important
-				margin-right: 0 !important
-				background-color: #606268
-				opacity: 1
-
-				&-active
-					background-color: $white
-
-				&:not(:last-child)
-					margin-bottom: 0
-					margin-right: 15px !important
-
-		&__info-or,
-		&__box span,
-		&__footer
-			display: none
-
-
+		background: none

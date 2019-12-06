@@ -26,7 +26,7 @@ $(document).ready(function() {
 	{
 	  boxClass: 'wow', 
 	  animateClass: 'animated', 
-	  offset: 200, 
+	  offset: 0, 
 	  mobile: false, 
 	  live: true 
 	});
