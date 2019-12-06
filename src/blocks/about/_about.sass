@@ -1,0 +1,43 @@
+.about 
+	padding: 100px 0 110px
+
+	&__wrapper
+		position: relative
+		max-width: 570px
+		margin: 0 auto
+		text-align: center
+
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+
+		&::before
+			top: -5px
+			left: -65px
+			width: 26px
+			height: 26px
+			border-radius: 5px
+			background-color: $color-secondary
+
+		&::after
+			right: -70px
+			bottom: 33px
+			width: 15px
+			height: 15px
+			border-radius: 3px
+			background-color: #F09C7F
+
+	&__descr
+		margin-top: 25px
+		letter-spacing: -0.2px
+
+
+	+width-md
+		padding: 80px 0 
+
+	+width-sm
+		padding: 65px 0 
+		
+		&__descr
+			margin-top: 10px
