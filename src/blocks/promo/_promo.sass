@@ -1,6 +1,8 @@
 .promo
-	position: relative 
-	
+	position: relative
+	background: url('../img/promo-bg.png') right top no-repeat
+	background-size: 57% 100%
+
 	&__wrapper
 		display: flex
 		align-items: flex-start
@@ -115,6 +117,7 @@
 
 
 	+width-sm
+		background: none
 
 		&__info
 			max-width: 100%
@@ -135,7 +138,3 @@
 
 		&__banner
 			display: none
-
-
-	+width-xs
-		background: none
