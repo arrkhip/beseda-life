@@ -16,22 +16,3 @@ $(window).scroll(function(){
     }
 });
 
-
-// header social
-$('.js-header__social-call').magnificPopup({
-	type: 'inline',
-	preloader: false,
-	closeBtnInside: false,
-	fixedContentPos: false,
-	mainClass: 'mfp-social',
-
-  callbacks: {
-    open: function() {  
-      $('body, html').addClass('body-no-scroll');
-    },                                        
-
-    close: function() { 
-      $('body, html').removeClass('body-no-scroll');   
-    },                                        
-  }
-});
