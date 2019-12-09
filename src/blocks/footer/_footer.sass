@@ -1,0 +1,146 @@
+/*
+ * ========================
+ * FOOTER
+ * ========================
+ */
+.footer 
+	padding: 54px 0 80px
+	margin-bottom: 80px
+	font-size: 14px
+	color: #8294A4
+	background-color: #F9F9F9
+
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	
+	&__col
+
+		&:nth-child(3)
+			display: inline-flex
+			align-items: flex-start
+	
+	&__logo
+	
+	&__info
+		max-width: 270px
+
+		p
+			line-height: 20px
+
+			&:not(:last-child)
+				margin-bottom: 30px
+	
+	&__list
+		display: block
+		max-width: 130px
+
+		&:first-child
+			margin-right: 84px
+	
+	&__item
+		line-height: 1
+
+		&:not(:last-child)
+			margin-bottom: 25px
+	
+	&__link
+		font-size: 14px
+		+trs()
+
+		&:not(.active):hover
+			color: $color-primary-1
+
+		&.active
+			font-weight: 700
+			color: #374F64
+
+	&__user
+		margin-bottom: 46px
+		font-weight: 700
+		color: #374F64
+
+		a
+			+trs()
+			&:hover
+				color: $color-primary
+
+	&__contacts
+		line-height: 20px
+
+		a 
+			display: block
+			+trs()
+
+			&:hover
+				color: $color-primary-1
+	
+	&__sibtitle
+		margin-bottom: 10px
+		font-weight: 700
+		color: #374F64
+
+
+	+width-lg
+
+		&__list
+			&:first-child
+				margin-right: 40px
+
+
+	+width-md
+
+		&__wrapper
+			flex-wrap: wrap
+
+		&__col
+			width: 50%
+
+		&__info
+			max-width: 100%
+			margin-bottom: 50px
+
+
+	+width-sm
+		padding: 40px 0 50px
+		margin-bottom: 40px
+
+		&__col
+			width: auto
+
+			&:nth-child(1),
+			&:nth-child(2)
+				width: 100%
+
+			&:nth-child(3)
+				display: block
+
+		&__list:first-child
+			margin-right: 0
+			margin-bottom: 25px
+
+
+	+width-xs
+
+		&__col
+			width: 100%
+
+		&__info
+			margin-bottom: 35px
+
+			p:not(:last-child)
+				margin-bottom: 15px
+
+		&__user
+			margin: 35px 0
+
+		&__list
+			max-width: 100%
+
+			&:first-child
+				margin-bottom: 15px
+
+		&__item:not(:last-child)
+			margin-bottom: 15px
+

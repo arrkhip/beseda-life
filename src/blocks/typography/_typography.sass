@@ -24,27 +24,10 @@
 
  
 .link
-  position: relative
-  display: inline-flex
-  overflow: hidden
-  color: $color-primary
+	text-decoration: underline
 
-  &::after
-    content: ''
-    position: absolute
-    left: 0
-    bottom: 4px
-    width: 100%
-    height: 1px
-    background-color: $color-primary
-    +trs(all, .3s, ease)
-
-  &:hover::after
-    transform: translateX(-100%)
-
-  +width-md
-  	&::after
-  		bottom: 1px
+	&:hover
+		text-decoration: none
 
 
 +width-md
