@@ -1,0 +1,74 @@
+/*
+ * ========================
+ * ACCORDION 
+ * ========================
+ */
+.accordion 
+
+	&__item
+		padding-bottom: 35px
+		padding: 0 26px 35px 29px
+		border-bottom: 1px solid #CFD9DE
+		
+		&:not(:last-child)
+			margin-bottom: 42px
+
+		&:nth-child(3) .accordion__body
+			display: block
+
+	&__header
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		+trs()
+
+		&:hover
+			cursor: pointer
+			opacity: .8
+
+		&.active
+			
+			.accordion__title
+				color: $color-secondary
+
+			.accordion__toggle
+				transform: rotate(225deg)
+				border-color: $color-secondary
+
+
+	&__title
+		width: calc(100% - 30px)
+		color: $color-text--dark
+		
+	&__toggle
+		display: inline-flex
+		width: 10px
+		height: 10px
+		padding-top: 4px
+		border-bottom: 3px solid $color-text--dark
+		border-right: 3px solid $color-text--dark
+		transform: rotate(45deg)
+		+trs()
+		
+		&:hover
+			opacity: .8
+
+	&__body
+		display: none
+		padding-top: 25px
+			
+
+	+width-sm
+
+		&__item
+			padding: 0 15px 25px
+
+			&:not(:last-child)
+				margin-bottom: 25px
+
+		&__toggle
+			border-width: 2px
+
+		&__body
+			padding-top: 15px
+
