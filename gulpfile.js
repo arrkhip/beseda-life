@@ -29,7 +29,8 @@ gulp.task('styles', function() {
 gulp.task('styles:libs', function() {
 	return gulp.src([
 	'src/libs/normalize/normalize.css',
-	'src/libs/animate/animate.css'
+	'src/libs/animate/animate.css',
+	'src/libs/swiper/swiper.min.css'
 	]) 
 		.pipe(concat('libs.min.css')) 
 		.pipe(cssnano()) 
@@ -59,7 +60,8 @@ gulp.task('scripts:libs', function() {
 	return gulp.src([ 
 		'src/libs/jquery/dist/jquery.min.js', 
 		'src/libs/svgxuse/svgxuse.min.js',
-		'src/libs/wow/wow.min.js'
+		'src/libs/wow/wow.min.js',
+		'src/libs/swiper/swiper.min.js'
 	])
 		.pipe(concat('libs.min.js')) 
 		.pipe(uglify()) 

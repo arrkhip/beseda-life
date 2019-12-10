@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 	//= ../blocks/header/header.js
 	//= ../blocks/accordion/accordion.js
+	//= ../blocks/recall/recall.js
 
 	wow = new WOW(
 	{
