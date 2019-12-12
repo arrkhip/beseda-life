@@ -1,0 +1,129 @@
+.staff 
+
+	.grid
+		position: relative
+		max-width: 1000px
+
+	&__headline
+		position: absolute
+		top: -24px
+		right: 15px
+		width: 100%
+		max-width: 569px
+	
+	&__slider
+
+	.swiper-slide
+		opacity: 0 !important
+		+trs()
+
+		&-active
+			opacity: 1 !important
+
+	&__wrapper
+		display: flex
+		align-items: center
+	
+	&__banner
+		position: relative
+		line-height: 0
+
+	&__message
+		position: absolute
+		top: 200px
+		left: -114px
+		max-width: 185px
+		padding: 16px 13px 20px 24px
+		border: 2px solid #EDF1F4
+		border-radius: 7px
+		font-weight: 700
+		line-height: 16px
+		color: $color-text--dark
+		box-shadow: 11px 12px 10px rgba(41, 57, 49, 0.28)
+		background-color: $white
+
+		&::after
+			content: ''
+			position: absolute
+			bottom: -7px
+			right: -2px
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 0 12px 12px 0
+			border-color: transparent $white transparent transparent
+
+	&__info
+		max-width: 647px
+		min-height: 239px
+		padding: 42px 103px 55px 77px
+		background-color: $white
+		border: 1px solid #E9ECF2
+		border-radius: 0 5px 5px 0
+
+	&__descr
+		padding: 20px 0 45px
+		font-size: 18px
+		line-height: 19px
+
+	&__more
+		font-weight: 700
+	
+	&__box
+		position: absolute
+		bottom: 0
+		right: 15px
+		z-index: 1
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 100%
+		max-width: 569px
+
+	&__arrows
+
+	&__arrow
+
+		&-prev,
+		&-next
+			display: inline-flex
+			width: 42px
+			height: 42px
+			background-color: #EDF1F4
+			outline: none
+			+trs()
+
+			&:hover
+				cursor: pointer
+				background-color: #E8F4EE
+
+				.staff__arrow-icon
+					fill: $color-secondary
+
+		&-prev
+			margin-right: 18px
+
+			.staff__arrow-icon
+				transform: scale(-1, 1)
+
+		&-icon
+			width: 18px
+			height: 14px
+			margin: auto
+			fill: $color-text
+			+trs()
+
+
+
+	+width-sm
+		
+
+		&__headline
+			position: static
+
+		&__wrapper
+			flex-direction: column
+
+		&__box
+			position: static
+
