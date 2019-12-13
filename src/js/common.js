@@ -4,6 +4,8 @@ $(document).ready(function() {
 	//= ../blocks/accordion/accordion.js
 	//= ../blocks/recall/recall.js
 	//= ../blocks/staff/staff.js
+	//= ../blocks/tabs/tabs.js
+	//= ../blocks/services/services.js
 
 	wow = new WOW(
 	{

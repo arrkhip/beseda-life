@@ -1,0 +1,193 @@
+/*
+ * ========================
+ * SERVICES
+ * ========================
+ */
+.services 
+	position: relative
+	padding-top: 80px
+
+	&::before
+		content: ''
+		position: absolute
+		top: -50px
+		right: 0
+		width: 65%
+		height: 652px
+		background: url(../img/promo-bg.png) bottom left no-repeat
+	
+	.grid
+		@media screen and (min-width: 1200px)
+			max-width: 1000px
+	
+	&__tabs
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		padding-top: 40px
+	
+		&-header
+		
+		&-item
+			padding: 10px 11px
+			font: 500 18px/1 $font-main
+			border-radius: 3px
+			background-color: transparent
+			+trs()
+
+			&.active
+				color: $color-secondary
+				background-color: $color-bg
+
+			&:not(:last-child)
+				margin-bottom: 10px
+
+			&:hover
+				cursor: pointer
+				color: $color-secondary
+		
+		&-content 
+			height: 0
+			width: 0
+			opacity: 0
+			visibility: hidden
+			transform: translateY(30px)
+			transition: opacity .5s ease, transform .5s ease
+			
+			&.active
+				height: auto
+				width: auto
+				visibility: visible
+				opacity: 1
+				transform: translateY(0)
+		
+	&__slider
+		overflow: hidden
+	
+	&__card
+		position: relative
+		width: 100%
+		max-width: 570px
+		min-height: 300px
+		padding: 57px 26px 35px 41px
+		border: 1px solid #E9ECF2
+		margin-bottom: 32px
+		background-color: $white
+
+		&::before
+			content: ''
+			position: absolute
+			bottom: -1px
+			right: 0
+			width: 70px
+			height: 1px
+			background-color: $white
+
+		&::after
+			content: ''
+			position: absolute
+			bottom: -18px
+			right: -1px
+			width: 80px
+			height: 80px
+			background-color: $white
+			transform: skewY(29deg)
+			border: 1px solid #E9ECF2
+			z-index: -1
+
+		&-decor
+			position: absolute
+			top: 10px
+			left: -27px
+			font: 700 96px/1 $font-main
+			color: $color-bg
+	
+		&-title
+			margin-bottom: 15px
+			font: 700 22px/27px $font-main
+			color: $color-text--dark
+
+	&__arrows
+		margin-top: 60px
+	
+	&__arrow
+
+		&-prev,
+		&-next
+			width: 16px
+			height: 16px
+			fill: #BAC9D4
+			+trs()
+
+			&:hover
+				cursor: pointer
+				fill: $color-secondary
+
+		&-prev
+			transform: scale(-1, 1)
+
+		&-next
+			margin-left: 26px
+	
+	&__box
+		display: flex
+
+		.btn:nth-child(2)
+			margin-left: 30px
+			padding: 0 25px
+
+
+	+width-md
+
+		&__tabs
+
+			&-item
+				font-size: 16px
+
+				&:not(:last-child)
+					margin-bottom: 7px
+
+			&-wrapper
+				width: 100%
+				max-width: 390px
+
+		&__card
+			padding: 30px 16px 25px 21px
+
+		&__box
+			flex-direction: column
+			align-items: flex-start
+
+			.btn:nth-child(2)
+				margin-left: 0
+				margin-top: 10px
+
+
+	+width-sm
+
+		&::before
+			display: none
+
+		&__tabs
+			flex-direction: column
+
+			&-header
+				display: flex
+				flex-wrap: wrap
+				align-items: flex-start
+				margin-bottom: 25px
+
+			&-item
+
+			&-wrapper
+				max-width: 100%
+
+		&__card
+			min-height: 255px
+
+		&__arrows
+			margin-top: 40px
+
+
+
+	
