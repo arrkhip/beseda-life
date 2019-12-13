@@ -1,0 +1,160 @@
+/*
+ * ========================
+ * PROCESS 
+ * ========================
+ */
+.process 
+	
+	.grid
+		@media screen and (min-width: 1200px)
+			max-width: 1000px
+	
+	&__tabs
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		padding-top: 44px
+	
+		&-header
+			padding-top: 40px
+		
+		&-item
+			position: relative
+			font: 700 18px/22px $font-main
+			+trs()
+
+			&::after
+				content: ''
+				position: absolute
+				top: 13px
+				z-index: -1
+				right: -137px
+				height: 1px
+				width: 100px
+				background-color: #D7DBE2
+				opacity: 0
+				transform: translateX(-20px)
+				+trs()
+
+			&:not(:last-child)
+				margin-bottom: 53px
+
+			&:hover
+				cursor: pointer
+				color: $color-secondary
+
+			span 
+				position: absolute
+				top: -35px
+				left: -30px
+				font: 900 72px/1 $font-main
+				color: $color-bg
+				opacity: 0
+				transform: translateY(20px)
+				z-index: -1
+				+trs()
+
+
+			&.active
+				color: $color-text--dark
+
+				&::after
+					opacity: 1
+					transform: translateX(0)
+
+				span 
+					opacity: 1
+					transform: translateY(0)
+
+		&-wrapper
+			width: 100%
+			max-width: 668px
+		
+		&-content 
+			height: 0
+			width: 0
+			opacity: 0
+			visibility: hidden
+			transform: translateY(30px)
+			transition: opacity .5s ease, transform .5s ease
+			
+			&.active
+				height: auto
+				width: auto
+				visibility: visible
+				opacity: 1
+				transform: translateY(0)
+	
+	&__card
+		min-height: 362px
+		padding: 44px 41px
+		border-radius: 5px
+		background-color: $color-secondary
+		background-position: left bottom
+		background-repeat: no-repeat
+		background-size: cover
+		box-shadow: 0px 10px 40px #86939D
+
+		&-info
+			color: $white
+
+		&-title
+			margin-bottom: 20px
+			font: 700 28px/34px $font-main
+		
+		&-descr
+			max-width: 240px
+			line-height: 22px
+			letter-spacing: -.4px
+
+
+	+width-md
+
+		&__tabs
+
+			&-wrapper
+				max-width: 470px
+
+			&-item
+				&::after
+					display: none
+
+		&__card
+			min-height: 310px
+			padding: 30px
+
+
+	+width-sm
+
+		&__tabs
+			flex-direction: column
+
+			&-wrapper
+				max-width: 100%	
+
+			&-header
+				display: flex
+				align-items: flex-start
+
+
+	+width-xs
+
+		&__tabs
+
+			&-header
+				flex-direction: column
+				padding-top: 0
+				margin-bottom: 25px
+
+			&-item
+				font-size: 16px
+
+				&:not(:last-child)
+					margin-bottom: 15px
+
+				span 
+					display: none
+
+		&__card
+			background-image: none !important
+			min-height: auto
