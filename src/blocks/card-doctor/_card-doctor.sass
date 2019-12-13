@@ -1,0 +1,88 @@
+/*
+ * ========================
+ * PROMO
+ * ========================
+ */
+.card-doctor 
+	width: 100%
+	max-width: 569px
+	padding: 31px 29px 34px
+	border: 1px solid #E9ECF2
+	border-radius: 5px
+	background-color: $white
+
+	&:hover
+		.card-doctor__experience span 
+			color: #EE7D57
+
+		.card-doctor__tag
+			color: $color-secondary
+			background-color: $color-bg 
+	
+	&__header
+		display: flex
+		align-items: center
+
+	&__avatar
+		width: 156px
+		height: 156px
+		border-radius: 50%
+		margin-right: 45px
+		overflow: hidden
+		line-height: 0
+	
+	&__info
+	
+	&__experience
+		margin-top: 11px
+		font-size: 17px
+
+		span 
+			display: block
+			font-weight: 700
+			font-size: 36px
+			line-height: 1
+			+trs()
+	
+	&__body
+		padding-top: 22px
+	
+	&__tags
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+		margin-bottom: 31px
+	
+	&__tag
+		margin-bottom: 11px
+		border-radius: 3px
+		background-color: #EDF1F4
+		padding: 3px 10px
+		line-height: 16px
+		+trs()
+
+		&:not(:last-child)
+			margin-right: 11px
+	
+	&__descr
+		margin-bottom: 35px
+		line-height: 18px
+	
+	&__box
+		display: flex
+		align-items: flex-start
+
+		.btn:first-child
+			margin-right: 16px
+
+
+	+width-xs
+
+		&__header
+			flex-direction: column
+
+		&__avatar
+			width: 120px
+			height: 120px
+			margin: 0 auto 15px
+
