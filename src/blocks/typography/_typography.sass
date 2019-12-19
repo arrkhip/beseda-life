@@ -41,6 +41,38 @@
 	&--green
 		color: $color-secondary
 
+	&--back
+		position: relative
+		padding-left: 17px
+		font-weight: 700
+
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 4px
+			width: 8.5px
+			height: 8.5px
+			border-bottom: 3px solid $color-primary-1
+			border-left: 3px solid $color-primary-1
+			transform: rotate(45deg)
+
+	&--next
+		position: relative
+		padding-right: 15px
+		font-weight: 700
+
+		&::before
+			content: ''
+			position: absolute
+			right: 0
+			top: 7px
+			width: 6px
+			height: 6px
+			border-bottom: 2px solid $color-primary-1
+			border-left: 2px solid $color-primary-1
+			transform: rotate(-135deg)
+
 
 +width-md
 

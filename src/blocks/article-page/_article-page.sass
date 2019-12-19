@@ -1,0 +1,86 @@
+/*
+ * ========================
+ * ARTICLE-PAGE
+ * ========================
+ */
+.article-page 
+
+	&__back
+		padding-top: 43px
+
+	&__info
+		padding-top: 36px
+
+		&-descr
+			padding-top: 20px
+
+			p:not(:last-child)
+				margin-bottom: 35px
+
+	&__share
+		padding: 70px 0
+
+		&-wrapper
+			display: flex
+			align-items: center
+
+		&-info
+			margin-right: 35px
+
+			p
+				padding-top: 6px
+				font-size: 18px
+				line-height: 20px
+		
+		&-social
+			display: flex
+			align-items: flex-start
+
+		&-facebook,
+		&-twitter,
+		&-vk
+			display: inline-flex
+			width: 50px
+			height: 50px
+			border-radius: 5px
+			+trs()
+
+			&:hover
+				opacity: .8
+
+			svg
+				width: 25px
+				height: 25px
+				margin: auto
+				fill: $white
+
+		&-facebook
+			background: #3A589E
+			margin-right: 10px
+
+		&-twitter
+			background-color: #1DA0F1
+			margin-right: 10px
+
+		&-vk
+			background-color: #44678D
+
+	&__others
+		padding-top: 92px
+
+		&-title
+			font: 700 28px/44px $font-main
+			color: $color-text--dark
+
+		&-list
+			display: flex
+			align-items: flex-start
+			justify-content: space-between
+			padding-top: 32px
+			padding-bottom: 48px
+
+		&-item
+
+
+		&-box
+			text-align: right
