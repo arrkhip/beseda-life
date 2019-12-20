@@ -1,0 +1,93 @@
+/*
+ * ========================
+ * CARD-PROBLEM
+ * ========================
+ */
+.card-problem 
+	max-width: 975px
+	padding: 65px 0
+	border-bottom: 1px solid #DBE4EA
+	margin: 0 auto
+	
+	&__decor
+		margin-bottom: 25px
+		font: 700 96px/44px $font-main
+		color: #DBE4EA
+	
+	&__content
+		position: relative
+		padding-left: 35px
+		margin-bottom: 46px
+		height: 135px
+		overflow: hidden
+		+trs()
+
+		&::after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 54px
+			background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 91.38%)
+			+trs()
+
+		&.open
+			height: auto
+
+			&::after
+				opacity: 0
+	&__title
+		margin-bottom: 10px
+		font: 700 22px/27px $font-main
+		color: $color-text--dark
+	
+	&__descr
+		margin-bottom: 27px
+		letter-spacing: -.3px
+	
+	&__author
+		font: 700 18px/22px $font-main
+		color: $color-text--dark
+	
+	&__more
+
+		span 
+			position: relative
+			padding-right: 18px
+			font-weight: 700
+			text-decoration: underline
+			+trs()
+
+			&:hover
+				cursor: pointer
+				text-decoration: none
+				opacity: .8
+
+			&::after
+				content: ''
+				position: absolute
+				top: 4px
+				right: 0
+				width: 6px
+				height: 6px
+				border-bottom: 2px solid $color-secondary
+				border-left: 2px solid $color-secondary
+
+			&:first-child
+				color: $color-secondary
+
+				&::after
+					transform: rotate(-45deg)
+
+			&:last-child
+				color: #92A9BC
+
+				&::after
+					top: 9px
+					border-bottom-color: #92A9BC
+					border-left-color: #92A9BC
+					transform: rotate(135deg)
+
+
+

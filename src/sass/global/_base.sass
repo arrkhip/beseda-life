@@ -180,7 +180,24 @@ input[type=checkbox]:checked + label:before
   border-radius: 3px
   background-color: #EDF1F4
   padding: 3px 10px
+  font-size: 18px
+  font-weight: 500
   line-height: 16px
+  border: 2px solid transparent
+  +trs()
+
+  &:hover
+    cursor: pointer
+    color: $color-secondary
+    background-color: #E8F4EE
+
+  &.active
+    border-color: $color-secondary
+    color: $color-secondary
+    background-color: #E8F4EE
+
+
+
 
 
 
