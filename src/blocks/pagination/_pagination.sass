@@ -1,0 +1,65 @@
+/*
+ * ========================
+ * PAGINATION
+ * ========================
+ */
+.pagination 
+	display: flex
+	align-items: center
+
+	&__arrow-prev,
+	&__arrow-next
+		width: 13px
+		height: 13px
+		border-bottom: 3px solid $color-text
+		border-left: 3px solid $color-text
+		+trs()
+
+		&:hover
+			cursor: pointer
+			border-color: $color-secondary
+
+	&__arrow-prev
+		transform: rotate(45deg)
+
+	&__arrow-next
+		transform: rotate(-135deg)
+
+	&__list
+		display: inline-flex
+		align-items: flex-start
+		padding: 0 85px
+
+	&__item
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		width: 58px
+		height: 58px
+		border-radius: 3px
+		font-weight: 700
+		font-size: 24px
+		color: $color-text--dark
+		background-color: transparent
+		+trs()
+
+		&:not(:last-child)
+			margin-right: 9px
+
+		&.active
+			background-color: #EDF1F4
+			color: $color-text
+
+	a.pagination__item:hover
+		color: $color-secondary
+
+
+	+width-sm
+
+		&__list
+			padding: 0 25px
+
+		&__item
+			width: 38px
+			height: 38px
+			font-size: 18px
