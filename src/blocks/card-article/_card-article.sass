@@ -24,7 +24,7 @@
 		padding: 20px 35px 45px
 
 	.tag-list
-		margin-bottom: 22px
+		margin-bottom: 11px
 
 	&__descr
 		position: relative
@@ -47,3 +47,56 @@
 	.link
 		+trs()
 		opacity: 0
+
+	&--horizontal
+		max-width: 869px
+		min-height: 320px
+		display: flex
+		align-items: center
+
+		.card-article
+
+			&__banner
+				width: 100%
+				max-width: 270px
+				min-height: 320px
+
+				img 
+					object-fit: cover
+					height: 100%
+
+			&__info
+				padding: 40px 42px 40px 35px 
+
+			&__descr
+				margin-bottom: 21px
+
+
+	+width-md
+
+		.link
+			opacity: 1
+
+		&--horizontal
+
+			.card-article__info
+				padding: 25px 30px
+
+
+
+	+width-sm
+
+		&--horizontal
+			flex-direction: column
+
+			.card-article
+
+				&__banner
+					order: -1
+					max-width: 100%
+					height: auto
+					min-height: 100px
+
+					img 
+						width: 100%
+
