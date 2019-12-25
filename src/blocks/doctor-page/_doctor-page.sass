@@ -6,6 +6,8 @@
 .doctor-page 
 
 	.promo
+		background: none
+		
 		.headline__title
 			margin-bottom: 8px
 
@@ -14,3 +16,87 @@
 
 		.promo__descr 
 			max-width: 467px
+	
+	&__tabs
+		padding-top: 60px
+		
+		&-header
+			display: flex
+			padding: 12px 0
+			border: 1px solid #E9ECF2
+			border-radius: 5px
+		
+		&-item
+			width: 25%
+			text-align: center
+
+			&:not(:last-child)
+				border-right: 1px solid #E9ECF2
+
+			&.active
+				color: $color-text--dark
+
+			&:not(.active) span:hover 
+				color: $color-secondary
+				cursor: pointer
+
+			span 
+				+trs()
+				font-weight: 700
+
+
+		
+		&-wrapper
+			max-width: 870px
+			margin: 0 auto
+
+		&-content 
+			height: 0
+			width: 0
+			opacity: 0
+			visibility: hidden
+			transform: translateY(30px)
+			transition: opacity .5s ease, transform .5s ease
+			
+			&.active
+				height: auto
+				width: auto
+				visibility: visible
+				opacity: 1
+				transform: translateY(0)
+
+		&-inner
+			display: flex
+			align-items: flex-start
+			justify-content: space-between
+			padding-top: 41px
+			padding-bottom: 74px
+
+		&-col
+			width: 100%
+			max-width: 448px
+
+		&-value
+			display: flex
+			align-items: flex-start
+			line-height: 22px
+
+			&:not(:last-child)
+				margin-bottom: 22px
+
+			svg 
+				flex-shrink: 0
+				position: relative
+				width: 11px
+				height: 11px
+				margin-top: 5px
+				margin-right: 10px
+
+			span 
+				flex-shrink: 1
+
+		&-box
+			display: flex
+
+			.btn:not(:last-child)
+				margin-right: 30px
