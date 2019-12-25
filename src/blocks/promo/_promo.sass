@@ -26,6 +26,52 @@
 
 		.btn:first-child
 			margin-right: 32px
+
+	
+	&__cards
+		display: flex
+		align-items: flex-start
+	
+	&__card
+		width: 100%
+		max-width: 170px
+		border-radius: 5px
+		overflow: hidden
+
+		&:first-child
+			margin-right: 30px
+
+		&:last-child
+
+			.promo__card-body
+				line-height: 16px
+	
+		&-header
+			padding: 7px 17px
+			background-color: $color-bg
+		
+		&-title
+			font-weight: 700
+			color: #216841
+		
+		&-body
+			display: flex
+			align-items: center
+			padding: 17px
+			border: 1px solid #E9ECF2
+			border-top: none
+			font-style: italic
+
+			.h1
+				margin-right: 7px
+				font-style: italic
+
+		&-sup
+			align-self: flex-start
+		
+		&-sub
+			align-self: flex-end
+
 	
 	&__banner
 		position: relative
