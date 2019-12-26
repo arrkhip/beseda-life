@@ -1,0 +1,83 @@
+/*
+ * ========================
+ * NAV-PANEL 
+ * ========================
+ */
+.nav-panel 
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	max-width: 269px
+	min-height: 710px
+	border-radius: 5px
+	background-color: #F7FAFC
+
+	&__list
+		padding: 30px 34px 0
+
+	&__item:not(:last-child)
+		margin-bottom: 28px
+
+	&__link
+		display: flex
+		align-items: center
+
+		&:hover
+			svg
+				fill: $color-secondary
+
+			span
+				color: $color-secondary
+
+		&.active
+			svg
+				fill: $color-text--dark
+
+			span
+				color: $color-text--dark
+
+
+		svg 
+			width: 17px
+			height: 17px
+			margin-right: 15px
+			fill: $color-text
+			+trs()
+
+		span 
+			font-size: 18px
+			font-weight: 600
+			+trs()
+
+
+
+	&__info
+		position: relative
+		padding: 35px 25px 57px
+		text-align: center
+
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 25px
+			width: calc(100% - 50px)
+			height: .5px
+			background-color: rgba(145, 169, 189, .2)
+
+		&-title
+			margin-bottom: 12px
+			font-size: 18px
+			font-weight: 600
+			color: $color-text--dark
+
+		&-descr
+			max-width: 180px
+			margin: 0 auto 35px
+			line-height: 18px
+
+		.btn
+			font-weight: 500
+			color: $color-text--dark
+			border: 0.5px solid rgba(145, 169, 189, .2)
+			background-color: $white
