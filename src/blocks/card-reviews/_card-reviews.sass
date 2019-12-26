@@ -1,0 +1,118 @@
+/*
+ * ========================
+ * CARD-REVIEWS
+ * ========================
+ */
+.card-reviews 
+	max-width: 970px
+	padding: 51px 70px 56px
+	border-radius: 5px
+	box-shadow: 0px 4px 15px #D2DBE2
+
+	&--orange
+
+		.card-reviews 
+
+			&__avatar
+				border-color: $color-primary-1
+
+			&__more span:first-child
+				color: $color-primary-1
+				
+				&::after
+					border-color: $color-primary-1
+	
+	&__header
+		display: flex
+		align-items: center
+		margin-bottom: 30px
+	
+	&__avatar
+		width: 100px
+		height: 100px
+		border-radius: 50%
+		border: 4px solid $color-secondary
+		margin-right: 35px
+		overflow: hidden
+	
+	&__info
+	
+	&__post
+		margin-top: 15px
+		font-weight: 700
+		font-size: 18px
+
+	&__body
+	
+	&__descr
+		position: relative
+		height: 92px
+		margin-bottom: 45px
+		font-size: 18px
+		line-height: 24px
+		overflow: hidden
+
+		&::after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 56px
+			background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 91.38%)
+			+trs()
+
+		&.open
+			height: auto
+
+			&::after
+				opacity: 0
+	&__more
+
+		span 
+			position: relative
+			padding-right: 18px
+			text-decoration: underline
+			+trs()
+
+			&:hover
+				cursor: pointer
+				text-decoration: none
+				opacity: .8
+
+			&::after
+				content: ''
+				position: absolute
+				top: 4px
+				right: 0
+				width: 6px
+				height: 6px
+				border-bottom: 2px solid $color-secondary
+				border-left: 2px solid $color-secondary
+
+			&:first-child
+				color: $color-secondary
+
+				&::after
+					transform: rotate(-45deg)
+
+			&:last-child
+				color: #92A9BC
+
+				&::after
+					top: 9px
+					border-bottom-color: #92A9BC
+					border-left-color: #92A9BC
+					transform: rotate(135deg)
+
+
+	+width-sm
+		padding: 35px 25px
+
+		&__avatar
+			width: 75px
+			height: 75px
+			margin-right: 20px
+
+		&__post
+			margin-top: 5px

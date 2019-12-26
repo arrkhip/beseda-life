@@ -7,6 +7,7 @@ $(document).ready(function() {
 	//= ../blocks/tabs/tabs.js
 	//= ../blocks/services/services.js
 	//= ../blocks/card-problem/card-problem.js
+	//= ../blocks/card-reviews/card-reviews.js
 
 	wow = new WOW(
 	{
