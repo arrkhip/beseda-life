@@ -62,22 +62,44 @@ img
 
 .hidden
   display: none
+
+// вынести в отдельный файл все элементы форм
+.input-box
+
+  &+&
+    margin-top: 30px
+
+  .label
+
+    &+.input
+      display: block
+      width: 100%
+      margin-top: 12px
+
+  +width-sm
+    &+&
+      margin-top: 15px
+
+    .label
+
+      &+.input
+        margin-top: 8px
   
 .label
-  font-size: 16px
-  font-weight: 700
+  font: 700 18px/20px $font-main
 
 .input 
   display: inline-block
-  border: none
-  font-weight: 700
-  font-size: 18px
+  height: 50px
+  padding: 0 10px
+  border: 1px solid #E9ECF2
+  border-radius: 5px
   color: $color-text
   background-color: transparent
   +trs()
 
   &:focus 
-    // border-bottom-color: $color-primary
+    border-bottom-color: $color-primary-1
   
   +input-placeholder 
     color: $color-text
@@ -85,8 +107,12 @@ img
   &+&
     margin-top: 15px
 
+  +width-sm
+    height: 30px
+
+
   +width-xs
-    font-size: 16px
+    font-size: 14px
   
 .textarea 
   width: 100%
@@ -144,23 +170,39 @@ textarea:focus:-ms-input-placeholder
 input[type=checkbox] 
   display: none
 
-input[type=checkbox] + label:before 
+input[type=checkbox] + label
+  position: relative
   display: inline-block
-  content: "\2713"
-  height: 14px
-  width: 14px
-  border: 1px solid #E0E0E0
-  margin: -5px 5px 0 0
-  font-size: 16px    
-  line-height: 16px
-  text-align: center
-  vertical-align: middle
-  color: transparent
-  transition: color ease .3s
+  padding-left: 30px
+  font-size: 16px
+  line-height: 20px
 
+  &:hover
+    cursor: pointer
 
-input[type=checkbox]:checked + label:before 
-  color: $color-secondary
+input[type=checkbox] + label::before 
+  position: absolute
+  top: 0
+  left: 0
+  content: ''
+  height: 18px
+  width: 18px
+  border: 1px solid #D4DDE5
+  border-radius: 50%
+
+input[type=checkbox] + label::after
+  content: ''
+  position: absolute
+  top: 5px
+  left: 5px
+  width: 10px
+  height: 10px
+  border-radius: 50%
+  background-color: transparent
+  +trs()
+
+input[type=checkbox]:checked + label::after 
+  background-color: #216841
 
 
 .body-no-scroll
