@@ -1,0 +1,64 @@
+/*
+ * ========================
+ * QUESTIONS-PAGE  
+ * ========================
+ */
+.questions-page 
+	
+	&__content
+		padding-top: 84px
+	
+	&__wrapper
+		display: flex
+		align-items: flex-start
+
+	&__col:first-child
+		flex-shrink: 0
+		width: 100%
+		max-width: 226px
+		margin-right: 52px
+
+	&__col:last-child
+		flex-shrink: 1
+		width: 100%
+
+	&__box
+		display: flex
+		align-items: flex-start
+		padding-top: 40px
+
+		.btn:first-child
+			margin-right: 35px
+		
+
+	+width-md
+
+		&__col:first-child
+			margin-right: 15px
+
+		&__box
+
+			.btn:first-child
+				margin-right: 10px
+
+
+	+width-sm
+
+		&__content
+			padding-top: 50px
+
+		&__wrapper
+			flex-direction: column
+
+		&__col:first-child
+			margin-right: 0
+			margin-bottom: 50px
+
+
+	+width-xs
+		&__box
+			flex-direction: column
+
+			.btn:first-child
+				margin-right: 0
+				margin-bottom: 10px

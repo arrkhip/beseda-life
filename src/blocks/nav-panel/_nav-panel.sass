@@ -81,3 +81,45 @@
 			color: $color-text--dark
 			border: 0.5px solid rgba(145, 169, 189, .2)
 			background-color: $white
+
+
+	&--sm
+		max-width: 226px
+		min-height: auto
+		border-radius: 0
+		background-color: transparent
+
+		.nav-panel
+			&__list
+				padding: 0
+
+			&__item
+				padding: 10px
+				border-radius: 3px
+				+trs()
+
+				&:not(:last-child)
+					margin-bottom: 10px
+
+				&.active
+					background: $color-bg
+
+					.nav-panel__link
+
+						svg
+							fill: $color-secondary
+
+						span 
+							color: $color-secondary
+
+			&__link
+
+				span
+					font-weight: 700
+					font-size: 14px
+					color: $color-text--dark
+
+				&:not(.active):hover
+
+					span 
+						color: $color-secondary
