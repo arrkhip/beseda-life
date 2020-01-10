@@ -20,4 +20,35 @@ $(document).ready(function() {
 	wow.init();
 	
 
+$('#range-cost').rangeSlider(
+  {
+    direction: 'horizontal',
+    // settings: true,
+    skin: 'green',
+    type: 'interval',
+  },
+  {
+  	min: 1600,
+  	max: 3000,
+    step: 1,
+    values: [1600, 2300],
+  },
+);
+
+$('#range-experience').rangeSlider(
+  {
+    direction: 'horizontal',
+    // settings: true,
+    skin: 'green',
+    type: 'interval',
+    // scale: true,
+  },
+  {
+  	min: 1,
+  	max: 10,
+    step: 1,
+    values: [1, 5],
+  },
+);
+
 });

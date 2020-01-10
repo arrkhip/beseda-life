@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<title>Beseda Life | Онлайн консультации с психологом</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#313131">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#313131">
+	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="css/libs.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+	//= blocks/header/header.html
+
+	<div class="module-page">
+
+		<section class="promo">
+			<div class="grid grid--10">
+				<div class="promo__wrapper">
+					<div class="promo__info">
+						<div class="headline">
+							<div class="headline__subtitle headline__subtitle--mb-lg">Подберите себе психотерапевта</div>
+							<h1 class="headline__title h1">Модуль подбора психотерапевта</h1>
+						</div>
+						<p class="promo__descr">Здесь идет краткое описание что такое модуль и в чем его преимущества</p>
+					</div>
+					<div class="promo__banner">
+						<img src="img/promo-banner-module.png" alt="" />
+						<div class="promo__messages">
+							<div class="promo__question promo__question--base wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".3s">Начнем терапию?</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="module-page__content">
+			<div class="grid">
+				<div class="module-page__wrapper">
+					<div class="module-page__item">
+						<h3 class="h3 h3--lg">Что вас беспокоит?</h3>
+						<div class="tag-list">
+							<div class="tag">Трудности в отношениях</div>
+							<div class="tag">Проблемы в общении</div>
+							<div class="tag">Проблемы из детства</div>
+							<div class="tag">Сложности на работе</div>
+							<div class="tag">Сексуальные отношения</div>
+							<div class="tag active">Поиск себя</div>
+							<div class="tag">Заниженная самооценка</div>
+							<div class="tag">Семейные проблемы</div>
+						</div>
+						<button class="btn-clean">Сбросить</button>
+					</div>
+
+					<div class="module-page__item">
+						<h3 class="h3 h3--lg">Опишите вашу проблему подробнее</h3>
+						<textarea name="description" class="textarea" placeholder="Чем подробнее вы расскажите о своей проблеме, тем быстрее вы сможете ее решить"></textarea>
+					</div>
+
+					<div class="module-page__item">
+						<h3 class="h3 h3--lg">Расскажите о себе</h3>
+						<div class="module-page__item-block">
+							<div class="input-box module-page__input-name">
+								<label for="name" class="label">Имя</label>
+								<input type="text" class="input" id="name" name="name" placeholder="Имя Фамилия Отчество" />
+							</div>
+							<div class="sex">
+								<div class="sex__title">Пол</div>
+								<input type="radio" id="man" name="sex" class="sex__input" />
+								<label for="man" class="sex__label">
+									<span>М</span>
+								</label>
+								<input type="radio" id="female" name="sex" class="sex__input" />
+								<label for="female" class="sex__label">
+									<span>Ж</span>
+								</label>
+							</div>
+						</div>
+						<div class="module-page__item-block">
+							<div class="module-page__age">
+								<div class="module-page__subtitle">Возраст*</div>
+								<input type="text" id="age" class="module-page__age-input input" placeholder="21" />
+								<label for="age" class="module-page__age-label">*зная возраст, мы точнее подберём психолога</label>
+							</div>
+						</div>
+						<div class="module-page__item-block">
+							<div class="module-page__subtitle">О себе</div>
+							<textarea name="description" class="textarea" placeholder="Чем подробнее вы расскажите о своей проблеме, тем быстрее вы сможете ее решить"></textarea>
+							<div class="checkbox-box checkbox-box--square">
+								<input type="checkbox" class="checkbox" id="checkbox" />
+								<label for="checkbox">Заполнить анкету анонимно</label>
+							</div>
+						</div>
+					</div>					
+
+					<div class="module-page__item">
+						<h3 class="h3 h3--lg">Подберите дату</h3>
+						<div class="module-page__calendar">
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-1" name="calendar" /><label for="calendar-day-1"><span>1</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-2" name="calendar" /><label for="calendar-day-2"><span>2</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-3" name="calendar" /><label for="calendar-day-3"><span>3</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-4" name="calendar" /><label for="calendar-day-4"><span>4</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-5" name="calendar" /><label for="calendar-day-5"><span>5</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-6" name="calendar" /><label for="calendar-day-6"><span>6</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-7" name="calendar" /><label for="calendar-day-7"><span>7</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-8" name="calendar" /><label for="calendar-day-8"><span>8</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-9" name="calendar" /><label for="calendar-day-9"><span>9</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-10" name="calendar" /><label for="calendar-day-10"><span>10</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-11" name="calendar" /><label for="calendar-day-11"><span>11</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-12" name="calendar" /><label for="calendar-day-12"><span>12</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-13" name="calendar" /><label for="calendar-day-13"><span>13</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-14" name="calendar" /><label for="calendar-day-14"><span>14</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-15" name="calendar" /><label for="calendar-day-15"><span>15</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-16" name="calendar" /><label for="calendar-day-16"><span>16</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-17" name="calendar" /><label for="calendar-day-17"><span>17</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-18" name="calendar" /><label for="calendar-day-18"><span>18</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-19" name="calendar" /><label for="calendar-day-19"><span>19</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-20" name="calendar" /><label for="calendar-day-20"><span>20</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-21" name="calendar" /><label for="calendar-day-21"><span>21</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-22" name="calendar" /><label for="calendar-day-22"><span>22</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-23" name="calendar" /><label for="calendar-day-23"><span>23</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-24" name="calendar" /><label for="calendar-day-24"><span>24</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-25" name="calendar" /><label for="calendar-day-25"><span>25</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-26" name="calendar" /><label for="calendar-day-26"><span>26</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-27" name="calendar" /><label for="calendar-day-27"><span>27</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-28" name="calendar" /><label for="calendar-day-28"><span>28</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-29" name="calendar" /><label for="calendar-day-29"><span>29</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-30" name="calendar" /><label for="calendar-day-30"><span>30</span></label></div>
+							<div class="module-page__calendar-day"><input type="radio" id="calendar-day-31" name="calendar" /><label for="calendar-day-31"><span>31</span></label></div>
+						</div>
+					</div>
+					<div class="module-page__item">
+						<h3 class="h3 h3--lg">Подберите время</h3>
+						<div class="module-page__time">
+							<div class="module-page__time-item">
+								<input type="radio" name="time" id="time-1" />
+								<label for="time-1">
+									<span>16:00-17:00</span>
+								</label>
+							</div>
+							<div class="module-page__time-item">
+								<input type="radio" name="time" id="time-2" />
+								<label for="time-2">
+									<span>17:00-18:00</span>
+								</label>
+							</div>
+							<div class="module-page__time-item">
+								<input type="radio" name="time" id="time-3" />
+								<label for="time-3">
+									<span>18:00-19:00</span>
+								</label>
+							</div>
+							<div class="module-page__time-item">
+								<input type="radio" name="time" id="time-4" />
+								<label for="time-4">
+									<span>19:00-20:00</span>
+								</label>
+							</div>
+							<div class="module-page__time-item">
+								<input type="radio" name="time" id="time-5" />
+								<label for="time-5">
+									<span>20:00-21:00</span>
+								</label>
+							</div>
+							<div class="module-page__time-item">
+								<input type="radio" name="time" id="time-6" />
+								<label for="time-6">
+									<span>21:00-22:00</span>
+								</label>
+							</div>
+							<div class="module-page__time-item">
+								<input type="radio" name="time" id="time-7" />
+								<label for="time-7">
+									<span>22:00-23:00</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="module-page__item">
+						<h3 class="h3 h3--lg">Что важно в психологе</h3>
+						<div class="sex">
+							<div class="sex__title">Пол</div>
+							<input type="radio" id="man-1" name="sex" class="sex__input" />
+							<label for="man-1" class="sex__label">
+								<span>М</span>
+							</label>
+							<input type="radio" id="female-1" name="sex" class="sex__input" />
+							<label for="female-1" class="sex__label">
+								<span>Ж</span>
+							</label>
+						</div>
+						
+						<div class="module-page__item-block">
+							<div class="module-page__range-wrapper">
+								<div class="module-page__subtitle">Сумма за сеанс</div>
+								<div id="range-cost" class="module-page__range range-slider">
+									<span class="range-slider__min">1600</span>
+									<span class="range-slider__max">3000</span>
+								</div>
+							</div>
+							<div class="module-page__range-wrapper">
+								<div class="module-page__subtitle">Сумма за сеанс</div>
+								<div id="range-experience" class="module-page__range range-slider">
+									<span class="range-slider__min">1</span>
+									<span class="range-slider__max">10</span>
+								</div>
+							</div>
+						</div>
+
+						<button class="btn btn--green">Подобрать психолога</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div> 	
+
+	//= blocks/footer/footer.html
+
+	
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>

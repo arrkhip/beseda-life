@@ -30,6 +30,7 @@ gulp.task('styles:libs', function() {
 	return gulp.src([
 	'src/libs/normalize/normalize.css',
 	'src/libs/animate/animate.css',
+	'src/libs/range-slider/rangeSlider.css',
 	'src/libs/swiper/swiper.min.css'
 	]) 
 		.pipe(concat('libs.min.css')) 
@@ -61,6 +62,7 @@ gulp.task('scripts:libs', function() {
 		'src/libs/jquery/dist/jquery.min.js', 
 		'src/libs/svgxuse/svgxuse.min.js',
 		'src/libs/wow/wow.min.js',
+		'src/libs/range-slider/rangeSlider.js',
 		'src/libs/swiper/swiper.min.js'
 	])
 		.pipe(concat('libs.min.js')) 

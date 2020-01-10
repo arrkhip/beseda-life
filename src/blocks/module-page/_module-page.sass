@@ -1,0 +1,227 @@
+/*
+ * ========================
+ * MODULE-PAGE
+ * ========================
+ */
+.module-page 
+
+	&__content
+		padding-top: 20px
+
+	&__wrapper
+		max-width: 871px
+
+	&__item
+
+		&:not(:last-child)
+			margin-bottom: 70px
+
+		.h3
+			margin-bottom: 25px
+
+		.tag-list
+			max-width: 676px
+
+		.tag
+			padding: 10px
+
+		.checkbox-box--square
+			margin-top: 36px
+
+		&-block
+			display: flex
+			flex-wrap: wrap
+			align-items: flex-start
+
+			&:not(:last-child)
+				margin-bottom: 30px
+
+	&__subtitle
+		margin-bottom: 15px
+		font-weight: 700
+		font-size: 22px
+		line-height: 1
+		color: $color-text--dark
+
+	&__input-name
+		width: 100%
+		max-width: 565px
+		margin-right: 35px
+
+		label
+			margin-bottom: 15px
+			font-weight: 700
+			font-size: 22px
+			line-height: 1
+			color: $color-text--dark
+
+		input
+			height: 61px
+			padding-left: 27px
+
+			+input-placeholder
+				font-weight: 700
+				font-size: 18px
+	
+	&__age
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+
+		&-input
+			max-width: 165px
+			height: 61px
+			margin-right: 15px
+			text-align: center
+			font-weight: 700
+			font-size: 18px
+
+		&-label
+			max-width: 200px
+			line-height: 20px
+
+		.module-page__subtitle
+			width: 100%
+
+	&__calendar
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+		margin: -25px -12.5px 0
+
+		&-day
+			padding: 25px 12.5px 0
+
+			input[type=radio] 
+				display: none
+
+				& + label
+					display: inline-flex
+					width: 100px
+					height: 59px
+					border: 1px solid #E9ECF2
+					border-radius: 5px
+					+trs()
+
+					span
+						margin: auto
+						font-weight: 700
+						font-size: 24px
+						+trs()
+
+					&:hover
+						cursor: pointer
+
+				&:checked + label
+					border-color: $color-secondary
+					background-color: $color-bg
+
+					span 
+						color: $color-secondary
+
+	
+	&__time
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+		margin: -26px -12.5px 0
+
+		&-item
+			padding: 26px 13px 0
+
+			input[type=radio] 
+				display: none
+
+				& + label
+					display: inline-flex
+					width: 151px
+					height: 59px
+					border: 1px solid #E9ECF2
+					border-radius: 5px
+					+trs()
+
+					span
+						margin: auto
+						font-weight: 700
+						font-size: 22px
+						+trs()
+
+					&:hover
+						cursor: pointer
+
+				&:checked + label
+					border-color: $color-secondary
+					background-color: $color-bg
+
+					span 
+						color: $color-secondary
+
+	&__range
+		max-width: 414px
+
+		&-wrapper
+			width: 100%
+			max-width: 414px
+
+			&:not(:last-child)
+				margin-right: 28px
+
+
+
+	// range-slider
+	.range-slider
+
+		&__min,
+		&__max
+			position: relative
+			font-weight: 700
+			line-height: 20px
+			font-size: 18px
+			letter-spacing: -.05px
+
+		&__min
+			top: -13px
+			left: -11px
+
+		&__max
+			float: right
+			top: -11px
+			right: -13px
+
+		.slider
+
+			&--horizontal
+				height: 5px
+
+				.slider__bar
+					height: 5px
+					background-color: $color-secondary
+
+			&__handle
+				width: 17px
+				height: 17px
+				border: 3px solid #E9ECF2
+				background-color: $white
+				+trs(border-color)
+
+				&:hover
+					border-color: $color-primary-1
+
+			&__tip
+				top: 24px
+				padding: 0
+				border: none
+				box-shadow: none
+				line-height: 20px
+				font-size: 18px
+				letter-spacing: -.05px
+				color: $color-secondary
+				background-color: transparent
+
+			&__tongue
+				display: none
+
+
+
+
+
