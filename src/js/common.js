@@ -20,10 +20,13 @@ $(document).ready(function() {
 	wow.init();
 	
 
-$('#range-cost').rangeSlider(
+
+// вынести в отдельный файл
+if ($("#range-cost").length){
+
+  $('#range-cost').rangeSlider(
   {
     direction: 'horizontal',
-    // settings: true,
     skin: 'green',
     type: 'interval',
   },
@@ -33,15 +36,15 @@ $('#range-cost').rangeSlider(
     step: 1,
     values: [1600, 2300],
   },
-);
+  );
+};
 
-$('#range-experience').rangeSlider(
+if ($("#range-experience").length){
+  $('#range-experience').rangeSlider(
   {
     direction: 'horizontal',
-    // settings: true,
     skin: 'green',
     type: 'interval',
-    // scale: true,
   },
   {
   	min: 1,
@@ -49,6 +52,7 @@ $('#range-experience').rangeSlider(
     step: 1,
     values: [1, 5],
   },
-);
+  );
+};
 
 });
