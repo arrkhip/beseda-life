@@ -82,8 +82,57 @@
 					</aside>
 					<div class="account__content">
 						<h2 class="h2 account__title">Оплата</h2>
-						<div class="client-pay-page__card">Карта VISA **** **** **** 5678</div>
-						<button class="client-pay-page__btn-add"><span>+</span><p>Добавить способ оплаты</p></button>
+						<h5 class="h5 client-pay-page__subtitle">Выберите способ оплаты</h5>
+						<div class="js-tabs client-pay-page__tabs">
+							<div class="client-pay-page__tabs-header">
+								<div class="js-tabs__item client-pay-page__tabs-item active">Банковские карты</div>
+								<div class="js-tabs__item client-pay-page__tabs-item">Электронные деньги</div>
+							</div>
+							<div class="client-pay-page__tabs-wrapper">
+								<div class="js-tabs__content client-pay-page__tabs-content active">
+									<div class="client-pay-page__save-card active">
+										<div class="client-pay-page__save-card-check"></div>
+										<div class="client-pay-page__save-card-number">VISA **** **** **** 5678</div>
+										<div class="client-pay-page__save-card-edit">
+											<svg><use xlink:href="img/sprite.svg#pen"></use></svg>
+										</div>
+									
+								</div>
+									<div class="client-pay-page__new-card">
+										<div class="client-pay-page__item">
+											<div class="client-pay-page__new-card-check"></div>
+											<label for="card-number" class="h5 client-pay-page__subtitle">№ карты</label>
+											<input type="text" id="card-number" class="input" />
+										</div>
+										<div class="client-pay-page__item">
+											<label for="card-owner" class="h5 client-pay-page__subtitle">Владелец карты</label>
+											<input type="text" id="card-owner" class="input" />
+										</div>
+										<div class="client-pay-page__box">
+											<div class="client-pay-page__item">
+												<label for="card-month" class="h5 client-pay-page__subtitle">Месяц</label>
+												<input type="text" id="card-month" class="input" />
+											</div>
+											<div class="client-pay-page__item">
+												<label for="card-year" class="h5 client-pay-page__subtitle">Год</label>
+												<input type="text" id="card-year" class="input" />
+											</div>
+											<div class="client-pay-page__item">
+												<label for="card-cvv" class="h5 client-pay-page__subtitle">CVV</label>
+												<input type="text" id="card-cvv" class="input" />
+											</div>
+										</div>
+										<button class="btn btn--green">Добавить карту</button>
+									</div>
+								</div>
+							</div>
+							<div class="client-pay-page__tabs-wrapper">
+								<div class="js-tabs__content process__tabs-content">
+									<div class="h5">Электронные деньги</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>

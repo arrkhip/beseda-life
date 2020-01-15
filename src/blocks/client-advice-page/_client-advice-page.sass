@@ -52,6 +52,21 @@
 				&::after
 					background-color: $color-primary-1
 
+		&-content 
+			height: 0
+			width: 0
+			opacity: 0
+			visibility: hidden
+			transform: translateY(30px)
+			transition: opacity .5s ease, transform .5s ease
+			
+			&.active
+				height: auto
+				width: auto
+				visibility: visible
+				opacity: 1
+				transform: translateY(0)
+				
 	&__video
 		padding-top: 20px
 		text-align: center

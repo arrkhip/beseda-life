@@ -39,3 +39,181 @@
 			margin-right: 13px
 			font-size: 24px
 			background-color: #EDF1F4
+	
+	&__subtitle
+		line-height: 22px
+		color: $color-text--dark
+		
+	&__tabs
+		width: 100%
+		max-width: 570px
+		margin-bottom: 50px
+
+		&-header
+			display: flex
+			align-items: flex-start
+			padding-top: 35px
+			padding-bottom: 30px
+			border-bottom: 1px solid #E9ECF2
+			margin-bottom: 60px
+	
+		&-item
+			position: relative
+			padding-left: 30px
+
+			&::before,
+			&::after
+				content: ''
+				position: absolute
+				top: 50%
+				border-radius: 50%
+				transform: translateY(-50%)
+
+			&::before
+				left: 0
+				width: 16px
+				height: 16px
+				border: 1px solid #D4DDE5
+				transform: translateY(-50%)
+
+			&::after
+				left: 4px
+				width: 10px
+				height: 10px
+				background-color: transparent
+				+trs()
+
+			&:hover
+				cursor: pointer
+
+			&.active
+				color: $color-text--dark
+
+				&::after
+					background-color: $color-primary-1
+
+			&:not(:last-child)
+				margin-right: 52px
+	
+		&-content 
+			height: 0
+			width: 0
+			opacity: 0
+			visibility: hidden
+			transform: translateY(30px)
+			transition: opacity .5s ease, transform .5s ease
+			
+			&.active
+				height: auto
+				width: auto
+				visibility: visible
+				opacity: 1
+				transform: translateY(0)
+
+
+	
+	&__save-card
+		display: flex
+		align-items: flex-start
+
+		&.active
+
+			.client-pay-page__save-card-check::after
+				background-color: $color-primary-1
+		
+		&-check
+			position: relative
+			width: 18px
+			height: 18px
+			border: 1px solid #D4DDE5
+			border-radius: 50%
+			margin-right: 11px
+
+			&::after
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 10px
+				height: 10px
+				border-radius: 50%
+				margin: auto
+				background-color: transparent
+				+trs()
+
+		&-number
+			margin-right: auto
+			font-size: 18px
+			line-height: 20px
+			color: $color-text--dark
+
+		&-edit
+			display: inline-flex
+			width: 30px
+			height: 30px
+			background: $color-secondary
+			border-radius: 3px
+			+trs()
+
+			&:hover
+				cursor: pointer
+				opacity: .8
+
+			svg
+				width: 18px
+				height: 18px
+				margin: auto
+	
+	&__new-card
+		padding-left: 30px
+		margin-top: 48px
+
+		&.active
+
+			.client-pay-page__new-card-check::after
+				background-color: $color-primary-1
+		
+		&-check
+			display: inline-block
+			vertical-align: middle
+			position: relative
+			width: 18px
+			height: 18px
+			border: 1px solid #D4DDE5
+			border-radius: 50%
+			margin-left: -30px
+			margin-right: 10px
+
+			&::after
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 10px
+				height: 10px
+				border-radius: 50%
+				margin: auto
+				background-color: transparent
+				+trs()
+
+		.btn
+			width: 100%
+			max-width: 270px
+	
+	&__item
+
+		.input
+			width: 100%
+			margin-top: 8px
+			margin-bottom: 30px
+	
+	&__box
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+
+		.client-pay-page__item
+			width: calc(33.3% - 14px)
+
