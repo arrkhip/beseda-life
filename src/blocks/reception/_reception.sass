@@ -1,0 +1,125 @@
+/*
+ * ========================
+ * RECEPTION 
+ * ========================
+ */
+.reception 
+	width: 100%
+	max-width: 270px
+	
+	&__card
+		padding: 17px 26px 34px
+		border: 1px solid rgba(145, 169, 189, 0.2)
+		border-radius: 5px
+
+		&-header
+			display: flex
+			align-items: center
+			justify-content: space-between
+			padding-bottom: 16px
+			border-bottom: 1px solid #F2F2F2
+	
+		&-body
+			padding-top: 34px
+	
+		&-item:not(:last-child)
+			margin-bottom: 20px
+	
+		&-subtitle
+			font-size: 14px
+			line-height: 16px
+			margin-bottom: 6px
+
+		&-time
+			font-size: 18px
+			line-height: 21px
+			font-weight: 600
+			color: $color-text--dark
+	
+		&-status
+			position: relative
+			padding-left: 13px
+			font-size: 16px
+			line-height: 19px
+			font-weight: 600
+			color: $color-text--dark
+
+			&::before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 0
+				width: 7px
+				height: 7px
+				border-radius: 50%
+				background-color: #EE7D57
+				transform: translateY(-50%)
+
+		&-btn
+			height: 36px
+			padding: 0 23px
+			margin-top: 38px
+
+	
+	&__doctor
+		display: flex
+		align-items: center
+	
+		&-box
+			position: relative
+			width: 55px
+			height: 55px
+			margin-right: 17px
+
+			&::after
+				content: ''
+				position: absolute
+				bottom: 0
+				right: 0
+				width: 14px
+				height: 14px
+				border-radius: 50%
+				background-color: #2B935A
+	
+		&-avatar
+			width: 55px
+			height: 55px
+			border: 2px solid #E9ECF2
+			border-radius: 50%
+			overflow: hidden
+	
+		&-name
+			font-weight: 600
+			color: $color-text--dark
+	
+	&__status
+		padding-top: 20px
+
+		&-list
+			padding-top: 15px
+	
+		&-item
+			position: relative
+			padding-left: 20px
+			line-height: 22px
+
+			&::before
+				content: ''
+				position: absolute
+				top: 4px
+				left: 0
+				width: 14px
+				height: 14px
+				border-radius: 50%
+
+			&:not(:last-child)
+				margin-bottom: 4px
+	
+			&--paid::before
+				background-color: #2B935A
+	
+			&--unpaid::before
+				background-color: #EE7D57
+	
+			&--wait::before
+				background-color: $color-text
