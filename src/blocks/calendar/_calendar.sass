@@ -1,0 +1,71 @@
+.calendar
+	.datepicker
+		width: 100%
+		max-width: 570px
+		border: none
+
+		&--nav
+			align-items: center
+			height: 82px
+			padding: 4px 44px
+			border-radius: 5px 5px 0px 0px
+			background-color: #F7FAFC
+
+			&-action 
+				+trs()
+				height: 40px
+
+				&:hover
+					background-color: $color-bg
+
+				path
+					stroke: $black
+
+			&-title,
+			& i
+				font-weight: 600
+				font-size: 18px
+				line-height: 20px
+				letter-spacing: -0.05px
+				color: $color-text--dark
+
+
+
+				font-weight: 600;
+		
+		&--content
+			padding: 0 32px 19px
+			border: 1px solid rgba(145, 169, 189, 0.2)
+			border-top: none
+
+		&--days-names
+			padding: 22px 0
+			border-bottom: 1px solid rgba(145, 169, 189, 0.2)
+			margin: 0
+
+		&--day-name
+			font-weight: 600
+			font-size: 18px
+			line-height: 20px
+			letter-spacing: -0.05px
+			text-transform: lowercase
+			color: $color-text--dark
+
+			&.-weekend-
+				color: $color-text
+
+		&--cell
+			height: auto
+			padding: 25px 0
+			font-weight: 600
+			font-size: 18px
+			line-height: 20px
+			text-align: center
+			color: #304953
+
+			&.-current-
+				color: $color-secondary
+			
+			&.-other-month-
+				color: #E4E9EC
+
