@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<title>Beseda Life | Онлайн консультации с психологом</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#313131">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#313131">
+	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="css/libs.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+	//= blocks/header/header.html
+
+	<div class="client-calendar-page">
+
+		<section class="account">
+			<div class="grid">
+				<div class="account__wrapper">
+					<aside class="account__sidebar">
+						<div class="nav-panel">
+							<ul class="nav-panel__list">
+								<li class="nav-panel__item">
+									<a href="#" class="nav-panel__link">
+										<svg>
+											<use xlink:href="img/sprite.svg#user"></use>
+										</svg>
+										<span>Личные данные</span>
+									</a>
+								</li>
+								<li class="nav-panel__item">
+									<a href="#" class="nav-panel__link active">
+										<svg>
+											<use xlink:href="img/sprite.svg#book"></use>
+										</svg>
+										<span>Мои календарь</span>
+									</a>
+								</li>
+								<li class="nav-panel__item">
+									<a href="#" class="nav-panel__link">
+										<svg>
+											<use xlink:href="img/sprite.svg#message"></use>
+										</svg>
+										<span>Мои консультации</span>
+									</a>
+								</li>
+								<li class="nav-panel__item">
+									<a href="#" class="nav-panel__link">
+										<svg>
+											<use xlink:href="img/sprite.svg#dollar"></use>
+										</svg>
+										<span>Оплата</span>
+									</a>
+								</li>
+								<li class="nav-panel__item">
+									<a href="#" class="nav-panel__link">
+										<svg>
+											<use xlink:href="img/sprite.svg#plus"></use>
+										</svg>
+										<span>Мой психотерапевт</span>
+									</a>
+								</li>
+							</ul>
+							<div class="nav-panel__info">
+								<div class="nav-panel__info-title">Возникли вопросы?</div>
+								<p class="nav-panel__info-descr">Свяжитесь с нами для консультации</p>
+								<button class="btn btn--second">Связаться с нами</button>
+							</div>
+						</div>
+					</aside>
+					<div class="account__content">
+						<h2 class="h2 account__title">Мой календарь</h2>
+						//= blocks/calendar/calendar.html
+					</div>
+					<aside class="account__sidebar">
+						//= blocks/reception/reception.html
+					</aside>
+				</div>
+			</div>
+		</section>
+
+	</div> 	
+
+	<section class="promo">
+		<div class="grid grid--10">
+			<div class="promo__wrapper">
+				<div class="promo__info">
+					<div class="headline">
+						<h1 class="headline__title h1">У вас есть вопросы?</h1>
+					</div>
+					<p class="promo__descr">Beseda.Life — это не скорая психологическая помощь. Если у вас серьезные, угрожающие вашей жизни проблемы, которые требуют немедленного решения</p>
+					<div class="promo__box">
+						<button class="btn">Подобрать психолога</button>
+					</div>
+				</div>
+				<div class="promo__banner">
+					<img src="img/promo-banner-lk.png" alt="" />
+					<div class="promo__messages">
+						<div class="promo__question promo__question--base wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".3s">Мне это поможет?</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	//= blocks/footer/footer.html
+
+	
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>

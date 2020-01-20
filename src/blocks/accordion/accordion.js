@@ -1,7 +1,7 @@
 // accordion
 $(function() {
 	var caption = $('.js-accordion__header'),
-			content = $('.accordion__body');   
+			content = $('.accordion__body', 'js-accordion__body');   
 
 	caption.click(function(e) {
 		$(this).toggleClass('active');

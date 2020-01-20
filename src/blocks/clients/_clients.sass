@@ -1,0 +1,194 @@
+/*
+ * ========================
+ * CLIENTS 
+ * ========================
+ */
+.clients 
+	width: 100%
+	max-width: 870px
+	border: 1px solid rgba(145, 169, 189, .2)
+	border-radius: 5px
+	overflow: hidden
+	
+	&__header
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		padding: 22px 35px
+		border-bottom: 1px solid rgba(145, 169, 189, .2)
+		background-color: #F7FAFC
+
+		.h5:last-child
+			font-weight: 400
+
+	&__filter
+		padding: 34px 35px 28px
+	
+		&-header
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+			&:hover
+				cursor: pointer
+
+			&.active
+				.clients__filter-toggle
+					transform: rotate(225deg)
+	
+		&-icon
+			display: inline-block
+			vertical-align: middle
+			width: 17px
+			height: 17px
+			margin-right: 9px
+			fill: $color-text--dark
+
+		&-title
+
+			.h5
+				display: inline-block
+				vertical-align: middle
+				font-weight: 400
+
+		&-toggle
+			width: 8px
+			height: 8px
+			border-bottom: 2px solid $color-text--dark
+			border-right: 2px solid $color-text--dark
+			transform: rotate(45deg)
+			box-sizing: border-box
+			+trs()
+	
+		&-list
+			display: flex
+			flex-wrap: wrap
+			align-items: flex-start
+			padding-top: 18px
+			margin: 0 -5px
+
+		&-item
+			padding: 3px 7px
+			border-radius: 3px
+			margin: 0 5px 6px
+			font-weight: 500
+			line-height: 16px
+			background-color: #EDF1F4
+
+	&__card
+	
+		&-header
+			padding: 8px 35px
+			background-color: #F7FAFC
+	
+		&-body
+			display: flex
+			align-items: flex-start
+			padding: 26px 35px 40px	
+	
+		&-col
+			border-left: 1px solid #E9ECF2
+
+			&:first-child,
+			&:last-child
+				border-left: none
+
+			&:last-child
+				margin-top: 10px
+	
+		&-person
+			display: inline-flex
+			flex-wrap: wrap
+			align-items: center
+	
+			&-avatar
+				width: 50px
+				height: 50px
+				border-radius: 50%
+				margin-right: 15px
+				overflow: hidden
+
+				&+.clients__card-info
+					padding-left: 0
+
+			&-more
+				width: 100%	
+				margin-top: 35px
+				font-size: 18px
+				color: $color-text--dark
+				text-decoration: underline
+				+trs()
+
+				&:hover
+					opacity: .8
+	
+		&-info
+			padding: 5px 30px
+	
+		&-subtitle
+			margin-bottom: 10px
+			line-height: 16px
+	
+		&-text
+			font-weight: 700
+			line-height: 16px
+			color: $color-text--dark
+
+		.btn-edit
+			background-color: #EDF1F4
+
+			&__icon
+				fill: $color-text
+
+
+	+width-md
+		&__card
+
+			&-body
+				flex-wrap: wrap
+
+			&-col
+				border-left: none
+
+				&:first-child
+					order: -2
+					width: calc(100% - 45px)
+
+				&:last-child
+					order: -1
+
+				&:nth-child(3)
+					margin: 0 auto
+			
+			&-person
+				margin-bottom: 30px
+
+				&-more
+					margin-top: 15px
+					font-size: 16px
+
+			&-info
+				padding: 0
+
+			.btn-edit
+				margin-left: 15px
+
+
+	+width-xs
+		&__header,
+		&__filter,
+		&__card-header,
+		&__card-body
+			padding-left: 15px
+			padding-right: 15px
+
+		&__header
+			padding-top: 12px
+			padding-bottom: 12px
+
+		&__filter
+			padding-top: 25px
+		
+
+
+	
