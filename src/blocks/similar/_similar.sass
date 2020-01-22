@@ -1,28 +1,43 @@
 .similar 
-	padding-top: 108px
-	border-top: 1px solid #E9ECF2
 	margin-top: 50px
 
 	&__list
 		display: flex
 		align-items: flex-start
 		justify-content: space-between
+		padding-top: 108px
+		border-top: 1px solid #E9ECF2
 
 	&__item
 		width: calc(50% - 15px)
 	
 	&__card
+		position: relative
 		min-height: 262px
-		padding: 44px 73px 5px 73px
+		padding: 42px 50px 5px 42px
 		border-radius: 5px
 		color: $white
 		background-size: cover
 		background-position: left top
 		background-repeat: no-repeat
-		+trs()
+
+		&::before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 17px
+			width: calc(100% - 34px)
+			height: calc(100% - 15px)
+			border-radius: 5px
+			z-index: -1
+			box-shadow: 0px 10px 40px #86939D
+			+trs()
+			opacity: 0
 
 		&:hover
-			box-shadow: 0px 10px 40px #86939D
+
+			&::before
+				opacity: 1
 
 			.similar__descr,
 			.similar__more
@@ -55,11 +70,11 @@
 
 
 	+width-md
-		padding-top: 70px
 		margin-top: 30px
 
 		&__list
 			flex-direction: column
+			padding-top: 70px
 
 		&__item
 			width: 100%
