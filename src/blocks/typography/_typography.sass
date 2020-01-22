@@ -60,9 +60,18 @@
 			top: 4px
 			width: 8.5px
 			height: 8.5px
-			border-bottom: 3px solid $color-primary-1
-			border-left: 3px solid $color-primary-1
+			border-bottom: 3px solid $color-text
+			border-left: 3px solid  $color-text
 			transform: rotate(45deg)
+
+		&:hover
+			color: $color-primary-1
+			text-decoration: underline
+
+			&::before
+				border-bottom: 3px solid $color-primary-1
+				border-left: 3px solid $color-primary-1
+			
 
 	&--next
 		position: relative
