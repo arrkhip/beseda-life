@@ -13,10 +13,15 @@
 		position: absolute
 		top: -50px
 		right: 0
-		width: 65%
+		width: 100%
+		max-width: 1146px
 		height: 652px
-		background: url(../img/promo-bg.png) bottom left no-repeat
-	
+		background: url('../img/services-bg.png') bottom left no-repeat
+		background-size: cover
+
+		@media screen and (max-width: 1800px)
+			max-width: 60%
+
 	.grid
 		@media screen and (min-width: 1200px)
 			max-width: 1000px
@@ -30,13 +35,15 @@
 		&-header
 		
 		&-item
-			padding: 10px 11px
-			font: 500 18px/1 $font-main
-			border-radius: 3px
-			background-color: transparent
-			+trs()
+			span 
+				display: inline-block
+				padding: 10px 11px
+				font: 500 18px/1 $font-main
+				border-radius: 3px
+				background-color: transparent
+				+trs()
 
-			&.active
+			&.active span
 				color: $color-secondary
 				background-color: $color-bg
 
@@ -138,8 +145,17 @@
 			padding: 0 25px
 
 
+	+width-lg
+
+		&::before
+			max-width: 65%
+
+
 	+width-md
 		padding-bottom: 160px
+
+		&::before
+			max-width: 60%
 
 		&__tabs
 
