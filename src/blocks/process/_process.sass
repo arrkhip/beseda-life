@@ -71,41 +71,82 @@
 			max-width: 668px
 		
 		&-content 
+			// display: none
 			height: 0
 			width: 0
 			opacity: 0
 			visibility: hidden
-			transform: translateY(30px)
-			transition: opacity .5s ease, transform .5s ease
+			// transform: translateY(30px)
+			// transition: opacity .5s ease, transform .5s ease
 			
 			&.active
+				// display: block
 				height: auto
 				width: auto
 				visibility: visible
 				opacity: 1
-				transform: translateY(0)
-	
+				// transform: translateY(0)
+
+				.process__card-title,
+				.process__card-descr,
+				.process__card-banner
+					opacity: 1
+					transform: translateY(0)
+
 	&__card
-		min-height: 362px
-		padding: 44px 41px
+		position: relative
 		border-radius: 5px
-		background-color: $color-secondary
-		background-position: left bottom
-		background-repeat: no-repeat
-		background-size: cover
-		box-shadow: 0px 10px 40px #86939D
+		background: radial-gradient(104.56% 263.54% at 22.6% -4.56%, #76CFA5 0%, #389F66 51.27%)
+
+		&::after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 17px
+			width: calc(100% - 34px)
+			height: calc(100% - 32px)
+			box-shadow: 0px 10px 40px #86939D
+			border-radius: 5px
+			z-index: -1
+
+		&-inner
+			position: relative
+			min-height: 362px
+			padding: 44px 41px
+			overflow: hidden
 
 		&-info
+			position: relative
+			z-index: 1
 			color: $white
 
 		&-title
 			margin-bottom: 20px
 			font: 700 28px/34px $font-main
+			opacity: 0
+			+trs(all, .5s)
+			transform: translateY(20px)
 		
 		&-descr
 			max-width: 240px
 			line-height: 22px
 			letter-spacing: -.4px
+			opacity: 0
+			transform: translateY(20px)
+			+trs(all, .5s)
+			transition-delay: .1s
+
+		&-banner
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			line-height: 0
+			opacity: 0
+			transform: translateY(20px)
+			+trs(all, .5s)
+			transition-delay: .3s
+
 
 
 	+width-md
@@ -120,8 +161,13 @@
 					display: none
 
 		&__card
-			min-height: 310px
-			padding: 30px
+
+			&-inner
+				min-height: 310px
+				padding: 30px
+
+			&-title
+				margin-bottom: 8px
 
 
 	+width-sm
@@ -156,5 +202,4 @@
 					display: none
 
 		&__card
-			background-image: none !important
 			min-height: auto
