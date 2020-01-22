@@ -3,11 +3,14 @@
  * CARD-PROBLEM
  * ========================
  */
-.card-problem 
-	max-width: 975px
+.card-problem
+	position: relative
 	padding: 65px 0
 	border-bottom: 1px solid #DBE4EA
-	margin: 0 auto
+
+	&__inner
+		max-width: 975px
+		margin: 0 auto
 	
 	&__decor
 		margin-bottom: 25px
@@ -51,6 +54,7 @@
 		color: $color-text--dark
 	
 	&__more
+		text-align: right
 
 		span 
 			position: relative
