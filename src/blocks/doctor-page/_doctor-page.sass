@@ -43,8 +43,6 @@
 			span 
 				+trs()
 				font-weight: 700
-
-
 		
 		&-wrapper
 			max-width: 870px
@@ -100,3 +98,60 @@
 
 			.btn:not(:last-child)
 				margin-right: 30px
+
+
+	+width-sm
+		&__tabs
+
+			&-header
+				justify-content: space-around
+
+			&-item
+				width: auto
+
+				&:not(:last-child)
+					padding-right: 24px
+
+				span 
+					font-size: 14px
+
+			&-col:first-child
+				margin-right: 10px
+
+
+	+width-xs
+		&__tabs
+
+			&-header
+				justify-content: flex-start
+				flex-wrap: wrap
+				padding: 12px
+
+			&-item
+				width: 50%
+				text-align: left
+
+				&:not(:last-child)
+					padding-right: 0
+					border: none
+
+				span 
+					font-size: 14px
+
+			&-inner
+				flex-direction: column
+				padding-top: 30px
+				padding-bottom: 50px
+
+			&-col
+				max-width: 100%
+
+				&:first-child
+					margin-right: 0
+					margin-bottom: 22px
+			
+			&-box
+				flex-wrap: wrap
+
+				.btn:first-child
+					margin-bottom: 15px
