@@ -7,7 +7,6 @@
 	width: 100%
 	max-width: 870px
 
-	
 	&__header
 		padding: 20px 36px
 		border-radius: 5px 5px 0px 0px
@@ -83,3 +82,30 @@
 
 			b
 				color: $color-text--dark
+
+
+	+width-md
+
+		&__info
+			flex-wrap: wrap
+
+		&__col
+
+			&:first-child
+				width: 100%
+				margin-bottom: 15px
+
+			&:not(:last-child)::after
+				display: none
+
+		&__controls-descr
+			margin-left: 0
+
+
+	+width-xs
+
+		&__body 
+			padding: 10px 15px 24px
+
+		&__controls .btn 
+			width: calc(50% - 5px)
