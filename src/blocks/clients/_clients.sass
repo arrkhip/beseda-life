@@ -18,6 +18,19 @@
 		border-bottom: 1px solid rgba(145, 169, 189, .2)
 		background-color: #F7FAFC
 
+		&--green
+			position: relative
+
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 6px
+				height: 100%
+				border-radius: 5px 0 0 5px
+				background-color: $color-secondary
+
 		.h5:last-child
 			font-weight: 400
 
