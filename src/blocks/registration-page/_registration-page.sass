@@ -6,14 +6,23 @@
 .registration-page 
 	margin-top: 100px
 
-	.headline
-		margin-bottom: 27px
+	.grid
+		position: relative
 
-		.h5
-			font-weight: 400
+	&__info
+		max-width: 470px
+		margin-left: 100px
+
+	.headline .h5
+		font-weight: 400
 
 	&__form
+		margin-top: 38px
 		margin-bottom: 88px
+
+		.label
+			color: $color-text--dark
+			letter-spacing: -.3px
 
 		.checkbox-box
 			margin-top: 39px
@@ -28,10 +37,41 @@
 			display: flex
 			align-items: flex-start
 			justify-content: space-between
+			padding-top: 17px
+
+	&__banner
+		position: absolute
+		top: 43px
+		right: -39px
+
+
+	+width-lg
+
+		&__info
+			max-width: 400px
+
+		&__banner
+			max-width: 50%
+
+
+	+width-md
+
+		&__info
+			max-width: 350px
+			margin-left: 0
 
 
 	+width-sm
 		margin-top: 35px
 
+		&__info
+			margin: auto
+
+		.headline
+			text-align: center
+
 		&__form
 			margin-bottom: 50px
+
+		&__banner
+			display: none

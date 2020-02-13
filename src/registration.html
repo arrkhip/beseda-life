@@ -25,59 +25,64 @@
 	//= blocks/header/header.html
 
 	<div class="registration-page">
-		<div class="grid grid--6">
-			<div class="headline headline--center">
-				<h1 class="h1">Регистрация</h1>
+		<div class="grid">
+			<div class="registration-page__info">
+				<div class="headline">
+					<h1 class="h1">Регистрация</h1>
+				</div>
+				<form action="#" class="registration-page__form">
+					<div class="input-box">
+						<label for="name" class="label">Ваше имя:</label>
+						<input type="text" class="input" id="name" name="name" />
+					</div>
+					<div class="input-box">
+						<label for="phone" class="label">Телефон</label>
+						<input type="text" class="input" id="phone" name="phone" />
+					</div>
+					<div class="input-box">
+						<label for="password" class="label">Пароль</label>
+						<input type="password" class="input" id="password" name="password" />
+					</div>
+					<div class="input-box">
+						<label for="repeat-password" class="label">Подтверждение пароля</label>
+						<input type="password" class="input" id="repeat-password" name="repeat-password" />
+					</div>
+					<div class="checkbox-box">
+						<input type="checkbox" class="checkbox" id="checkbox" />
+						<label for="checkbox">Я ознакомился с соглашением на обработку моих персональных данных и принимаю его условия</label>
+					</div>
+					<div class="registration-page__form-box">
+						<button class="btn btn--green">Зарегистрироваться</button>
+					</div>
+				</form>
+				<div class="registration-page__enter">
+					<div class="headline headline--center">
+						<h5 class="h5">У вас уже есть аккаунт? <br> Вход через:</h5>
+					</div>
+					<div class="registration-page__enter-list">
+						<a href="#" class="btn-social btn-social--fb">
+							<svg class="btn-social__icon">
+								<use xlink:href="img/sprite.svg#facebook"></use>
+							</svg>
+							<span class="btn-social__title">Facebook</span>
+						</a>
+						<a href="#" class="btn-social btn-social--tw">
+							<svg class="btn-social__icon">
+								<use xlink:href="img/sprite.svg#twitter"></use>
+							</svg>
+							<span class="btn-social__title">Twitter</span>
+						</a>
+						<a href="#" class="btn-social btn-social--vk">
+							<svg class="btn-social__icon">
+								<use xlink:href="img/sprite.svg#vk"></use>
+							</svg>
+							<span class="btn-social__title">Вконтакте</span>
+						</a>
+					</div>
+				</div>
 			</div>
-			<form action="#" class="registration-page__form">
-				<div class="input-box">
-					<label for="name" class="label">Ваше имя:</label>
-					<input type="text" class="input" id="name" name="name" />
-				</div>
-				<div class="input-box">
-					<label for="phone" class="label">Телефон</label>
-					<input type="text" class="input" id="phone" name="phone" />
-				</div>
-				<div class="input-box">
-					<label for="password" class="label">Пароль</label>
-					<input type="password" class="input" id="password" name="password" />
-				</div>
-				<div class="input-box">
-					<label for="repeat-password" class="label">Подтверждение пароля</label>
-					<input type="password" class="input" id="repeat-password" name="repeat-password" />
-				</div>
-				<div class="checkbox-box">
-					<input type="checkbox" class="checkbox" id="checkbox" />
-					<label for="checkbox">Я ознакомился с соглашением на обработку моих персональных данных и принимаю его условия</label>
-				</div>
-				<div class="registration-page__form-box">
-					<button class="btn btn--green">Зарегистрироваться</button>
-				</div>
-			</form>
-			<div class="registration-page__enter">
-				<div class="headline headline--center">
-					<h5 class="h5">У вас уже есть аккаунт? <br> Вход через:</h5>
-				</div>
-				<div class="registration-page__enter-list">
-					<a href="#" class="btn-social btn-social--fb">
-						<svg class="btn-social__icon">
-							<use xlink:href="img/sprite.svg#facebook"></use>
-						</svg>
-						<span class="btn-social__title">Facebook</span>
-					</a>
-					<a href="#" class="btn-social btn-social--tw">
-						<svg class="btn-social__icon">
-							<use xlink:href="img/sprite.svg#twitter"></use>
-						</svg>
-						<span class="btn-social__title">Twitter</span>
-					</a>
-					<a href="#" class="btn-social btn-social--vk">
-						<svg class="btn-social__icon">
-							<use xlink:href="img/sprite.svg#vk"></use>
-						</svg>
-						<span class="btn-social__title">Вконтакте</span>
-					</a>
-				</div>
+			<div class="registration-page__banner">
+				<img src="img/registration-banner.png" alt="" />
 			</div>
 		</div>
 	</div> 	
