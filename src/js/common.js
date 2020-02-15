@@ -9,6 +9,7 @@ $(document).ready(function() {
 	//= ../blocks/card-problem/card-problem.js
 	//= ../blocks/card-reviews/card-reviews.js
   //= ../blocks/calendar/calendar.js
+  //= ../blocks/doctor-page/doctor-page.js
 
 	wow = new WOW(
 	{
