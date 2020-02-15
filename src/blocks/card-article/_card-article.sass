@@ -18,12 +18,35 @@
 			opacity: 1
 
 	&__banner
+		position: relative
 		height: 221px
 		
 		img
 			object-fit: cover
 			height: 100%
 			width: 100%
+
+	&__date
+		position: absolute
+		bottom: 32px
+		padding: 2px 8px
+		border: 1px solid #CBD1D7
+		border-radius: 3px
+		font-weight: 500
+		line-height: 16px
+		color: #92A9BC
+		background-color: $white
+
+		&--left
+			left: 31px
+
+		&--right
+			right: 31px
+
+		&--bottom
+			position: static
+			float: right
+			margin-top: 7px
 
 	&__info
 		padding: 20px 35px 45px

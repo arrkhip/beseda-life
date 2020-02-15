@@ -46,32 +46,6 @@
 		<section class="articles-page__inner">
 			<div class="grid">
 				<div class="articles-page__wrapper">
-					<div class="articles-page__divide">
-						<h3 class="h3 h3--sm">Разделы</h3>
-						<ul class="articles-page__nav">
-							<li class="articles-page__nav-item">
-								<a href="#" class="articles-page__nav-link active">Психотерапия</a>
-							</li>
-							<li class="articles-page__nav-item">
-								<a href="#" class="articles-page__nav-link">Депрессия</a>
-							</li>
-							<li class="articles-page__nav-item">
-								<a href="#" class="articles-page__nav-link">Психология отношений</a>
-							</li>
-							<li class="articles-page__nav-item">
-								<a href="#" class="articles-page__nav-link">Смысл жизни</a>
-							</li>
-							<li class="articles-page__nav-item">
-								<a href="#" class="articles-page__nav-link">Стресс</a>
-							</li>
-							<li class="articles-page__nav-item">
-								<a href="#" class="articles-page__nav-link">Чувства</a>
-							</li>
-							<li class="articles-page__nav-item">
-								<a href="#" class="articles-page__nav-link">Все статьи</a>
-							</li>
-						</ul>
-					</div>
 					<div class="articles-page__content">
 						<div class="card-article card-article--horizontal">
 							<div class="card-article__info">
@@ -85,12 +59,14 @@
 							</div>
 							<div class="card-article__banner">
 								<img src="img/card-article-banner.png" alt="" />
+									<div class="card-article__date card-article__date--right">20.03.19</div>
 							</div>
 						</div>
 
 						<div class="card-article card-article--horizontal">
 							<div class="card-article__banner">
 								<img src="img/card-article-banner-1.png" alt="" />
+								<div class="card-article__date card-article__date--left">20.03.19</div>
 							</div>
 							<div class="card-article__info">
 								<div class="tag-list">
@@ -112,11 +88,46 @@
 								<h3 class="h3">Обсессивно-компульсивное расстройство</h3>
 								<p class="card-article__descr"> К своему первому психотерапевту я была направлена обычным терапевтом после того, как я стала наносить себе раны на коже - навязчивое самоповрежедние К своему первому психотерапевту я была направлена обычным терапевтом после того, как я стала наносить</p>
 								<a href="#" class="link link--orange link--next">Подробнее</a>
+								<div class="card-article__date card-article__date--bottom">20.03.19</div>
 							</div>
 						</div>
 
-						//= blocks/pagination/pagination.html
+						<div class="pagination">
+							<div class="pagination__arrow-prev"></div>
+							<div class="pagination__list">
+								<a href="#" class="pagination__item active">1</a>
+								<a href="#" class="pagination__item">2</a>
+								<a href="#" class="pagination__item">3</a>
+								<span class="pagination__item">...</span>
+								<a href="#" class="pagination__item">10</a>
+							</div>
+							<div class="pagination__arrow-next"></div>
+						</div>
 					</div>
+					
+					<div class="similar">
+						<div class="similar__list">
+							<div class="similar__item">
+								<div class="similar__card" style="background-image: url('./img/similar-banner-1.png');">
+									<div class="similar__info">
+										<h3 class="h3 h3--sm">Подобрать специалиста</h3>
+										<p class="similar__descr">На сайте доступно для подбора 163 практикующих психолога разных направлений</p>
+									</div>
+									<a href="#" class="similar__more link">Смотреть подробнее</a>
+								</div>
+							</div>
+							<div class="similar__item">
+								<div class="similar__card" style="background-image: url('./img/similar-banner-2.png');">
+									<div class="similar__info">
+										<h3 class="h3 h3--sm">Проблемы с которыми мы работаем</h3>
+										<p class="similar__descr">На сайте доступно для подбора 163 практикующих психолога разных направлений</p>
+									</div>
+									<a href="#" class="similar__more link">Смотреть подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</section>
@@ -124,7 +135,6 @@
 
 	</div> 	
 
-	//= blocks/similar/similar.html
 	//= blocks/footer/footer.html
 
 	
