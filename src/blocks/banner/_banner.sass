@@ -10,6 +10,17 @@
 	padding: 55px 70px
 	border-radius: 5px
 	background: radial-gradient(104.56% 263.54% at 22.6% -4.56%, #76CFA5 0%, #389F66 51.27%)
+	
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 33px
+		width: calc(100% - 66px)
+		height: calc(100% - 32px)
+		border-radius: 5px
+		box-shadow: 0px 10px 40px #86939D
+		z-index: -1
 
 	&__info
 		max-width: 370px
@@ -29,7 +40,7 @@
 		line-height: 0
 
 
-	+width-md
+	+width-lg
 		padding: 35px 30px
 
 		&__image
