@@ -67,103 +67,104 @@
 
 		<section class="js-tabs doctor-page__tabs">
 			<div class="grid">
-			<div class="doctor-page__tabs-header">
-				<div class="js-tabs__item doctor-page__tabs-item active"><span>Специализация</span></div>
-				<div class="js-tabs__item doctor-page__tabs-item"><span>Образование</span></div>
-				<div class="js-tabs__item doctor-page__tabs-item"><span>О психологе</span></div>
-				<div class="js-tabs__item doctor-page__tabs-item"><span>Видеовизитка</span></div>
-				<div class="js-tabs__item doctor-page__tabs-item"><span>Отзывы</span></div>
-			</div>
-			<div class="doctor-page__tabs-wrapper">
-				<div class="js-tabs__content doctor-page__tabs-content active">
-					<div class="doctor-page__tabs-inner">
-						<div class="doctor-page__tabs-col">
-							<div class="doctor-page__tabs-value">
-								<svg>
-									<use xlink:href="img/sprite.svg#checked"></use>
-								</svg>
-								<span>Личностные и возрастные кризисы</span>
-							</div>
-							<div class="doctor-page__tabs-value">
-								<svg>
-									<use xlink:href="img/sprite.svg#checked"></use>
-								</svg>
-								<span>Отношения в семье (женат 15 лет)</span>
-							</div>
-							<div class="doctor-page__tabs-value">
-								<svg>
-									<use xlink:href="img/sprite.svg#checked"></use>
-								</svg>
-								<span>Отношения мужчины и женщины</span>
-							</div>
-							<div class="doctor-page__tabs-value">
-								<svg>
-									<use xlink:href="img/sprite.svg#checked"></use>
-								</svg>
-								<span>Отношения с отцом</span>
-							</div>
-						</div>
-
-						<div class="doctor-page__tabs-col">
-							<div class="doctor-page__tabs-value">
-								<svg>
-									<use xlink:href="img/sprite.svg#checked"></use>
-								</svg>
-								<span> Отношения с детьми и подростками (у меня двое сыновей 6 и 13 лет)</span>
-							</div>
-							<div class="doctor-page__tabs-value">
-								<svg>
-									<use xlink:href="img/sprite.svg#checked"></use>
-								</svg>
-								<span>Психологическая адаптация при смене места жительства (несколько раз переезжал)</span>
-							</div>
-							<div class="doctor-page__tabs-value">
-								<svg>
-									<use xlink:href="img/sprite.svg#checked"></use>
-								</svg>
-								<span> Профессиональная самореализация и достижение целей (15 лет работал бизнес-тренером)</span>
+				<div class="doctor-page__tabs-header">
+					<div class="js-tabs__item doctor-page__tabs-item active"><span>Специализация</span></div>
+					<div class="js-tabs__item doctor-page__tabs-item"><span>Образование</span></div>
+					<div class="js-tabs__item doctor-page__tabs-item"><span>О психологе</span></div>
+					<div class="js-tabs__item doctor-page__tabs-item"><span>Видеовизитка</span></div>
+					<div class="js-tabs__item doctor-page__tabs-item"><span>Отзывы</span></div>
+				</div>
+				<div class="doctor-page__tabs-wrapper">
+					<div class="js-tabs__content doctor-page__tabs-content active">
+						<div class="doctor-page__tabs-inner">
+							<div class="doctor-page__tabs-col">
+								<div class="doctor-page__tabs-value">
+									<svg>
+										<use xlink:href="img/sprite.svg#checked"></use>
+									</svg>
+									<span>Личностные и возрастные кризисы</span>
+								</div>
+								<div class="doctor-page__tabs-value">
+									<svg>
+										<use xlink:href="img/sprite.svg#checked"></use>
+									</svg>
+									<span>Отношения в семье (женат 15 лет)</span>
+								</div>
+								<div class="doctor-page__tabs-value">
+									<svg>
+										<use xlink:href="img/sprite.svg#checked"></use>
+									</svg>
+									<span>Отношения мужчины и женщины</span>
+								</div>
+								<div class="doctor-page__tabs-value">
+									<svg>
+										<use xlink:href="img/sprite.svg#checked"></use>
+									</svg>
+									<span>Отношения с отцом</span>
+								</div>
 							</div>
 
+							<div class="doctor-page__tabs-col">
+								<div class="doctor-page__tabs-value">
+									<svg>
+										<use xlink:href="img/sprite.svg#checked"></use>
+									</svg>
+									<span> Отношения с детьми и подростками (у меня двое сыновей 6 и 13 лет)</span>
+								</div>
+								<div class="doctor-page__tabs-value">
+									<svg>
+										<use xlink:href="img/sprite.svg#checked"></use>
+									</svg>
+									<span>Психологическая адаптация при смене места жительства (несколько раз переезжал)</span>
+								</div>
+								<div class="doctor-page__tabs-value">
+									<svg>
+										<use xlink:href="img/sprite.svg#checked"></use>
+									</svg>
+									<span> Профессиональная самореализация и достижение целей (15 лет работал бизнес-тренером)</span>
+								</div>
+
+							</div>
+						</div>		
+						
+						<div class="doctor-page__tabs-box">
+							<button class="btn btn--orange">Назначить консультацию</button>
+							<button class="btn btn--second">Задать вопрос</button>
 						</div>
-					</div>		
+					</div>
+					<div class="js-tabs__content doctor-page__tabs-content">
+						<div class="h2">Образование</div>
+					</div>
+					<div class="js-tabs__content doctor-page__tabs-content">
+						<div class="h2">О психологе</div>
+					</div>
+
+					<div class="js-tabs__content doctor-page__tabs-content">
+						<div class="doctor-page__video">
+							<div class="doctor-page__video-item">
+								<div id="overlay" class="doctor-page__video-overlay">
+									<div class="doctor-page__video-btn"></div>
+								</div>
+								<video id="video" class="doctor-page__video-player" poster="img/video-poster-1.png" preload="none">
+									<source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="doctor-page__video-item">
+								<div id="overlay" class="doctor-page__video-overlay">
+									<div class="doctor-page__video-btn"></div>
+								</div>
+								<video id="video" class="doctor-page__video-player" poster="img/video-poster-1.png" preload="none">
+									<source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+								</video>
+							</div>
+
+						</div>
+					</div>
 					
-					<div class="doctor-page__tabs-box">
-						<button class="btn btn--orange">Назначить консультацию</button>
-						<button class="btn btn--second">Задать вопрос</button>
+
+					<div class="js-tabs__content doctor-page__tabs-content">
+						<div class="h2">Отзывы</div>
 					</div>
-				</div>
-				<div class="js-tabs__content doctor-page__tabs-content">
-					<div class="h2">Образование</div>
-				</div>
-				<div class="js-tabs__content doctor-page__tabs-content">
-					<div class="h2">О психологе</div>
-				</div>
-
-				<div class="js-tabs__content doctor-page__tabs-content">
-					<div class="doctor-page__video">
-						<div class="doctor-page__video-item">
-							<div id="overlay" class="doctor-page__video-overlay">
-								<div class="doctor-page__video-btn"></div>
-							</div>
-							<video id="video" class="doctor-page__video-player" poster="img/video-poster-1.png" preload="none">
-								<source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
-							</video>
-						</div>
-						<div class="doctor-page__video-item">
-							<div id="overlay" class="doctor-page__video-overlay">
-								<div class="doctor-page__video-btn"></div>
-							</div>
-							<video id="video" class="doctor-page__video-player" poster="img/video-poster-1.png" preload="none">
-								<source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
-							</video>
-						</div>
-
-						</div>
-					</div>
-				</div>
-
-				<div class="js-tabs__content doctor-page__tabs-content">
-					<div class="h2">Отзывы</div>
 				</div>
 			</div>
 		</section>
