@@ -20,7 +20,6 @@ $(document).ready(function() {
 	  live: true 
 	});
 	wow.init();
-	
 
 
 // вынести в отдельный файл

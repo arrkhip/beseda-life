@@ -32,6 +32,7 @@ gulp.task('styles:libs', function() {
 	'src/libs/animate/animate.css',
 	'src/libs/range-slider/rangeSlider.css',
 	'src/libs/air-datepicker/datepicker.min.css',
+	'src/libs/fancybox/jquery.fancybox.min.css',
 	'src/libs/swiper/swiper.min.css'
 	]) 
 		.pipe(concat('libs.min.css')) 
@@ -65,6 +66,7 @@ gulp.task('scripts:libs', function() {
 		'src/libs/wow/wow.min.js',
 		'src/libs/range-slider/rangeSlider.js',
 		'src/libs/air-datepicker/datepicker.min.js',
+		'src/libs/fancybox/jquery.fancybox.min.js',
 		'src/libs/swiper/swiper.min.js'
 	])
 		.pipe(concat('libs.min.js')) 
