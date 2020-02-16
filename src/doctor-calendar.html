@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<title>Beseda Life | Онлайн консультации с психологом</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#313131">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#313131">
+	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="css/libs.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+	//= blocks/header/header.html
+
+	<div class="doctor-calendar-page">
+
+		<section class="account">
+			<div class="grid">
+				<div class="account__wrapper">
+					<aside class="account__sidebar">
+						<div class="nav-panel">
+							<ul class="nav-panel__list">
+								<li class="nav-panel__item">
+									<a href="#" class="nav-panel__link">
+										<svg>
+											<use xlink:href="img/sprite.svg#user"></use>
+										</svg>
+										<span>Личные данные</span>
+									</a>
+								</li>
+								<li class="nav-panel__item">
+									<a href="#" class="nav-panel__link active">
+										<svg>
+											<use xlink:href="img/sprite.svg#book"></use>
+										</svg>
+										<span>Мои календарь</span>
+									</a>
+								</li>
+								<li class="nav-panel__item">
+									<a href="#" class="nav-panel__link">
+										<svg>
+											<use xlink:href="img/sprite.svg#message"></use>
+										</svg>
+										<span>Мои консультации</span>
+									</a>
+								</li>
+								<li class="nav-panel__item">
+									<a href="#" class="nav-panel__link">
+										<svg>
+											<use xlink:href="img/sprite.svg#dollar"></use>
+										</svg>
+										<span>Оплата</span>
+									</a>
+								</li>
+								<li class="nav-panel__item">
+									<a href="#" class="nav-panel__link">
+										<svg>
+											<use xlink:href="img/sprite.svg#plus"></use>
+										</svg>
+										<span>Мои клиенты</span>
+									</a>
+								</li>
+							</ul>
+							<div class="nav-panel__info">
+								<div class="nav-panel__info-title">Возникли вопросы?</div>
+								<p class="nav-panel__info-descr">Свяжитесь с нами для консультации</p>
+								<button class="btn btn--second">Связаться с нами</button>
+							</div>
+						</div>
+					</aside>
+					<div class="account__content">
+						<h2 class="h2 account__title">Мои календарь</h2>
+						//= blocks/calendar/calendar.html
+						<section class="clients">
+							<div class="clients__header">
+								<h5 class="h5 h5--dark"> Консультации в этом месяце</h5>
+								<h5 class="h5 h5--dark">20 сеансов</h5>
+							</div>
+							<div class="clients__filter">
+								<div class="clients__filter-header js-accordion__header">
+									<div class="clients__filter-title">
+										<svg class="clients__filter-icon">
+											<use xlink:href="img/sprite.svg#filter"></use>
+										</svg>
+										<h5 class="h5 h5--dark">Фильтр</h5>
+									</div>
+									<div class="clients__filter-toggle"></div>
+								</div>
+								<div class="js-accordion__body clients__filter-body">
+									<div class="clients__filter-list">
+										<div class="clients__filter-item">консультации сегодня</div>
+										<div class="clients__filter-item">консультации на этой неделе</div>
+										<div class="clients__filter-item">консультации в этом месяце</div>
+										<div class="clients__filter-item">оплаченная запись</div>
+										<div class="clients__filter-item">неоплаченная запись</div>
+									</div>
+								</div>
+							</div>
+							<div class="clients__card">
+								<div class="clients__card-header">
+									<h5 class="h5 h5--dark">1</h5>
+									<div class="clients__card-status clients__card-status--paid">оплачено</div>
+								</div>
+								<div class="clients__card-body">
+									<div class="clients__card-col">
+										<div class="clients__card-person">
+											<div class="clients__card-person-avatar">
+												<img src="img/session-avatar.png" alt="" />
+											</div>
+											<div class="clients__card-info">
+												<div class="clients__card-text">Виктория <br> Петрова</div>
+											</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<div class="clients__card-info">
+											<div class="clients__card-subtitle">Дата</div>
+											<div class="clients__card-text">07.11.2019</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<div class="clients__card-info">
+											<div class="clients__card-subtitle">Время</div>
+											<div class="clients__card-text">16:00</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<button class="btn-edit">
+											<svg class="btn-edit__icon">
+												<use xlink:href="img/sprite.svg#pen3"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="clients__card">
+								<div class="clients__card-header">
+									<h5 class="h5 h5--dark">2</h5>
+									<div class="clients__card-status clients__card-status--unpaid">неоплачено</div>
+								</div>
+								<div class="clients__card-body">
+									<div class="clients__card-col">
+										<div class="clients__card-person">
+											<div class="clients__card-person-avatar">
+												<img src="img/session-avatar.png" alt="" />
+											</div>
+											<div class="clients__card-info">
+												<div class="clients__card-text">Виктория <br> Петрова</div>
+											</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<div class="clients__card-info">
+											<div class="clients__card-subtitle">Дата</div>
+											<div class="clients__card-text">07.11.2019</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<div class="clients__card-info">
+											<div class="clients__card-subtitle">Время</div>
+											<div class="clients__card-text">16:00</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<button class="btn-edit">
+											<svg class="btn-edit__icon">
+												<use xlink:href="img/sprite.svg#pen3"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="clients__card">
+								<div class="clients__card-header">
+									<h5 class="h5 h5--dark">3</h5>
+									<div class="clients__card-status clients__card-status--unpaid">неоплачено</div>
+								</div>
+								<div class="clients__card-body">
+									<div class="clients__card-col">
+										<div class="clients__card-person">
+											<div class="clients__card-person-avatar">
+												<img src="img/session-avatar.png" alt="" />
+											</div>
+											<div class="clients__card-info">
+												<div class="clients__card-text">Виктория <br> Петрова</div>
+											</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<div class="clients__card-info">
+											<div class="clients__card-subtitle">Дата</div>
+											<div class="clients__card-text">07.11.2019</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<div class="clients__card-info">
+											<div class="clients__card-subtitle">Время</div>
+											<div class="clients__card-text">16:00</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<button class="btn-edit">
+											<svg class="btn-edit__icon">
+												<use xlink:href="img/sprite.svg#pen3"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="clients__card">
+								<div class="clients__card-header">
+									<h5 class="h5 h5--dark">1</h5>
+									<div class="clients__card-status clients__card-status--paid">оплачено</div>
+								</div>
+								<div class="clients__card-body">
+									<div class="clients__card-col">
+										<div class="clients__card-person">
+											<div class="clients__card-person-avatar">
+												<img src="img/session-avatar.png" alt="" />
+											</div>
+											<div class="clients__card-info">
+												<div class="clients__card-text">Виктория <br> Петрова</div>
+											</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<div class="clients__card-info">
+											<div class="clients__card-subtitle">Дата</div>
+											<div class="clients__card-text">07.11.2019</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<div class="clients__card-info">
+											<div class="clients__card-subtitle">Время</div>
+											<div class="clients__card-text">16:00</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<button class="btn-edit">
+											<svg class="btn-edit__icon">
+												<use xlink:href="img/sprite.svg#pen3"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="clients__card">
+								<div class="clients__card-header">
+									<h5 class="h5 h5--dark">2</h5>
+									<div class="clients__card-status clients__card-status--unpaid">неоплачено</div>
+								</div>
+								<div class="clients__card-body">
+									<div class="clients__card-col">
+										<div class="clients__card-person">
+											<div class="clients__card-person-avatar">
+												<img src="img/session-avatar.png" alt="" />
+											</div>
+											<div class="clients__card-info">
+												<div class="clients__card-text">Виктория <br> Петрова</div>
+											</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<div class="clients__card-info">
+											<div class="clients__card-subtitle">Дата</div>
+											<div class="clients__card-text">07.11.2019</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<div class="clients__card-info">
+											<div class="clients__card-subtitle">Время</div>
+											<div class="clients__card-text">16:00</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<button class="btn-edit">
+											<svg class="btn-edit__icon">
+												<use xlink:href="img/sprite.svg#pen3"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="clients__card">
+								<div class="clients__card-header">
+									<h5 class="h5 h5--dark">3</h5>
+									<div class="clients__card-status clients__card-status--unpaid">неоплачено</div>
+								</div>
+								<div class="clients__card-body">
+									<div class="clients__card-col">
+										<div class="clients__card-person">
+											<div class="clients__card-person-avatar">
+												<img src="img/session-avatar.png" alt="" />
+											</div>
+											<div class="clients__card-info">
+												<div class="clients__card-text">Виктория <br> Петрова</div>
+											</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<div class="clients__card-info">
+											<div class="clients__card-subtitle">Дата</div>
+											<div class="clients__card-text">07.11.2019</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<div class="clients__card-info">
+											<div class="clients__card-subtitle">Время</div>
+											<div class="clients__card-text">16:00</div>
+										</div>
+									</div>
+									<div class="clients__card-col">
+										<button class="btn-edit">
+											<svg class="btn-edit__icon">
+												<use xlink:href="img/sprite.svg#pen3"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<aside class="account__sidebar">
+						<div class="reception">
+							<div class="reception__headline">
+								<div class="h3 h3--sm">Записи на сегодня:</div>
+								<p class="reception__headline-descr">У вас сегодня <b>5 консультаций</b></p>
+							</div>
+							<div class="reception__card">
+								<div class="reception__card-header">
+									<h5 class="h5 h5--dark">Записи на сегодня</h5>
+									<button class="btn-edit">
+										<svg class="btn-edit__icon">
+											<use xlink:href="img/sprite.svg#pen3"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="reception__card-body">
+									<div class="reception__card-item">
+										<div class="reception__card-subtitle">Мой клиент</div>
+										<div class="reception__doctor">
+											<div class="reception__doctor-box">
+												<div class="reception__doctor-avatar">
+													<img src="img/chat-avatar.png" alt="">
+												</div>
+											</div>
+											<div class="reception__doctor-name">Виктор</div>
+										</div>
+									</div>
+									<div class="reception__card-item">
+										<div class="reception__card-subtitle">Время</div>
+										<div class="reception__card-time">10:00-11:00</div>
+									</div>
+									<div class="reception__card-item">
+										<div class="reception__card-subtitle">Статус:</div>
+										<div class="reception__card-status">Неоплачено</div>
+									</div>
+									<button class="reception__card-btn btn btn--green">Перейти к консультации</button>
+								</div>
+								<div class="reception__card-body">
+									<div class="reception__card-item">
+										<div class="reception__card-subtitle">Мой клиент</div>
+										<div class="reception__doctor">
+											<div class="reception__doctor-box">
+												<div class="reception__doctor-avatar">
+													<img src="img/chat-avatar.png" alt="">
+												</div>
+											</div>
+											<div class="reception__doctor-name">Виктор</div>
+										</div>
+									</div>
+									<div class="reception__card-item">
+										<div class="reception__card-subtitle">Время</div>
+										<div class="reception__card-time">10:00-11:00</div>
+									</div>
+									<div class="reception__card-item">
+										<div class="reception__card-subtitle">Статус:</div>
+										<div class="reception__card-status">Неоплачено</div>
+									</div>
+									<button class="reception__card-btn btn btn--second">Перейти к консультации</button>
+									<p class="reception__card-information">Доступно будет за <b>10 минут</b> до консультации</p>
+								</div>
+							</div>
+							<div class="reception__status">
+								<h5 class="h5 h5--dark">Статусы записи</h5>
+								<div class="reception__status-list">
+									<div class="reception__status-item reception__status-item--paid">- оплачен</div>
+									<div class="reception__status-item reception__status-item--unpaid">- не оплачен</div>
+									<div class="reception__status-item reception__status-item--wait">- ждет подтверждение</div>
+								</div>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</section>
+
+	</div> 	
+
+	<section class="promo promo--empty">
+		<div class="grid">
+			<div class="promo__decor-line"></div>
+		</div>
+		<div class="grid grid--10">
+			<div class="promo__wrapper">
+				<div class="promo__info">
+					<div class="headline">
+						<h1 class="headline__title h1">У вас есть вопросы?</h1>
+					</div>
+					<p class="promo__descr">Beseda.Life — это не скорая психологическая помощь. Если у вас серьезные, угрожающие вашей жизни проблемы, которые требуют немедленного решения</p>
+					<div class="promo__box">
+						<button class="btn">Подобрать психолога</button>
+					</div>
+				</div>
+				<div class="promo__banner">
+					<img src="img/promo-banner-lk.png" alt="" />
+					<div class="promo__messages">
+						<div class="promo__question promo__question--base wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".3s">Мне это поможет?</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	//= blocks/footer/footer.html
+
+	
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>

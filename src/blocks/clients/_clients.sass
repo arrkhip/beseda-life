@@ -72,6 +72,9 @@
 			transform: rotate(45deg)
 			box-sizing: border-box
 			+trs()
+
+		&-body
+			display: none
 	
 		&-list
 			display: flex
@@ -91,8 +94,37 @@
 	&__card
 	
 		&-header
+			display: flex
+			justify-content: space-between
+			align-items: center
 			padding: 8px 35px
 			background-color: #F7FAFC
+
+		&-status
+			position: relative
+			width: 100%
+			max-width: 135px
+			line-height: 19px
+			padding-left: 12px
+
+			&::before
+				content: ''
+				position: absolute
+				top: 7px
+				left: 0
+				width: 7px
+				height: 7px
+				border-radius: 50%
+
+			&--paid::before
+				background-color: $color-secondary
+
+			&--unpaid::before
+				background-color: $color-primary-1			
+
+			&--wait::before
+				background-color: $color-text
+
 	
 		&-body
 			display: flex

@@ -6,6 +6,18 @@
 .reception 
 	width: 100%
 	max-width: 270px
+
+	&__headline
+		padding-top: 96px
+		padding-bottom: 25px
+
+		&-descr
+			margin-top: 11px
+			font-size: 18px
+			line-height: 21px
+		
+		&-btn
+			margin-top: 25px
 	
 	&__card
 		padding: 17px 26px 34px
@@ -18,9 +30,22 @@
 			justify-content: space-between
 			padding-bottom: 16px
 			border-bottom: 1px solid #F2F2F2
+
+			.btn-edit__icon
+				fill: $white
 	
 		&-body
 			padding-top: 34px
+			position: relative
+
+			&:not(:last-child)::before
+				content: ''
+				position: absolute
+				bottom: -20px
+				left: 0
+				width: 100%
+				height: 1px
+				background-color: #F2F2F2
 	
 		&-item:not(:last-child)
 			margin-bottom: 20px
@@ -60,6 +85,10 @@
 			padding: 0 23px
 			margin-top: 38px
 
+		&-information
+			margin-top: 11px
+			font-size: 14px
+			line-height: 16px
 	
 	&__doctor
 		display: flex
