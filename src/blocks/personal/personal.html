@@ -1,0 +1,120 @@
+<form action="" class="personal">
+
+	<div class="personal__info">
+		<h3 class="h3 h3--lg">Расскажите о себе</h3>
+
+		<div class="input-box personal__info-name">
+			<h4 class="h4">Имя</h4>
+			<input type="text" id="name" class="input" placeholder="Имя Фамилия Отчество" />
+		</div>
+
+		<div class="sex">
+			<h4 class="h4">Пол</h4>
+			<input type="radio" id="man" name="sex" class="sex__input" />
+			<label for="man" class="sex__label">
+				<span>М</span>
+			</label>
+			<input type="radio" id="female" name="sex" class="sex__input" />
+			<label for="female" class="sex__label">
+				<span>Ж</span>
+			</label>
+		</div>
+
+		<div class="age">
+			<h4 class="h4">Возраст*</h4>
+			<div class="age__inner">
+				<input type="text" id="age" class="age__input input" placeholder="21">
+				<label for="age" class="age__label">*зная возраст, мы точнее подберём психолога</label>
+			</div>
+		</div>
+
+		<div class="age age--full">
+			<h4 class="h4">Дата рождения*</h4>
+			<div class="age__inner">
+				<input type="text" class="age__input input" placeholder="00">
+				<input type="text" class="age__input input" placeholder="00">
+				<input type="text" class="age__input input" placeholder="0000">
+			</div>
+		</div>
+
+		<div class="personal__info-descr">
+			<h4 class="h4">О себе</h4>
+			<textarea name="description" class="textarea" placeholder="Расскажите о себе, ваши цели, увлечения и интересы. Это поможет подобрать вам психотерапевта, с которым у вас с большей вероятностью случиться контакт."></textarea>
+		</div>
+
+		<button class="personal__btn-add"><span>+</span><p>Добавить фотографию</p></button>
+
+		<div class="personal__centered">
+			<button class="btn btn--green">Сохранить изменения</button>
+		</div>
+	</div>
+
+	<div class="personal__education">
+		<div class="personal__tabs js-tabs">
+			<div class="personal__tabs-header">
+				<div class="personal__tabs-item js-tabs__item active"><span>Высшее образование</span></div>
+				<div class="personal__tabs-item js-tabs__item"><span>Образование</span></div>
+				<div class="personal__tabs-item js-tabs__item"><span>Сертификаты</span></div>
+			</div>
+			<div class="personal__tabs-wrapper">
+				<div class="js-tabs__content personal__tabs-content active">
+					<div class="personal__tabs-inner">
+						<div class="personal__tabs-box personal__tabs-box--w50">
+							<label for="input-1" class="label">Страна</label>
+							<input type="text" class="input" id="input-1" placeholder="Россия" />
+						</div>
+						<div class="personal__tabs-box personal__tabs-box--w50">
+							<label for="input-2" class="label">Город</label>
+							<input type="text" class="input" id="input-2" placeholder="Москва" />
+						</div>
+						<div class="personal__tabs-box">
+							<label for="input-3" class="label">Вуз</label>
+							<input type="text" class="input" id="input-3" placeholder="Россия" />
+						</div>
+						<div class="personal__tabs-box">
+							<label for="input-4" class="label">Факультет</label>
+							<input type="text" class="input" id="input-4" placeholder="Практическая психология" />
+						</div>
+						<div class="personal__tabs-box">
+							<label for="input-5" class="label">Кафедра</label>
+							<input type="text" class="input" id="input-5" placeholder="" />
+						</div>
+						<div class="personal__tabs-box">
+							<label for="input-6" class="label">Дата выпуска</label>
+							<input type="text" class="input" id="input-6" placeholder="" />
+						</div>
+						<div class="personal__centered">
+							<button class="btn btn--green">Сохранить изменения</button>
+						</div>
+					</div>
+				</div>
+				<div class="js-tabs__content personal__tabs-content">
+					<div class="personal__tabs-inner">
+						Образование
+					</div>
+				</div>
+				<div class="js-tabs__content personal__tabs-content">
+					<div class="personal__tabs-inner">
+						Сертификаты
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="personal__password">
+		<h3 class="h3 h3--lg">Изменение пароля</h3>
+		<div class="input-box">
+			<h4 class="h4">Новый пароль</h4>
+			<input type="text" class="input" placeholder="*******" />
+		</div>
+		<div class="input-box">
+			<h4 class="h4">Подтверждение нового пароля*</h4>
+			<input type="text" class="input" />
+		</div>
+		<div class="personal__centered">
+			<button class="btn btn--green">Сохранить изменения</button>
+		</div>
+	</div>
+
+</form>

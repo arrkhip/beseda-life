@@ -277,8 +277,8 @@ input[type=checkbox]:checked + label::after
     & + label
       position: relative
       display: inline-flex
-      width: 123px
-      height: 61px
+      width: 125px
+      height: 43px
       border: 1px solid rgba(233, 236, 242, 0.5)
       border-radius: 5px
       +trs()
@@ -300,6 +300,30 @@ input[type=checkbox]:checked + label::after
 
       span 
         color: $color-text--dark
+
+// age
+.age
+
+  &__inner
+    display: flex
+    align-items: flex-start
+
+  &__input
+    max-width: 70px
+    height: 43px
+    margin-right: 28px
+    text-align: center
+    font-weight: 700
+    font-size: 18px
+
+  &__label
+    max-width: 170px
+    line-height: 20px
+
+  &--full
+    .input + .input 
+      margin-top: 0
+
 
 
 .body-no-scroll
